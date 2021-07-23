@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+}
+body{
+  font-family: 'Cormorant Garamond', serif;
+}
+
+/* colors */
+ .bgk-blue{
+  background-color: #6C63FF!important;
+}
+.btn-blue{
+  color: #fff;
+  background-color: #6C63FF!important;
+}
+.txt-blue{
+  color: #6C63FF;
+}
+.bg-grey{
+  background-color:	#DCDCDC;
+}
+
+.nav{
+  padding: 15px;
+}
+.navbar-brand{
+  font-weight: 700;
+  font-size: xx-large;
+}
+.navbar-nav{
+  font-size:x-large;
+  font-weight: 600;
+}
+.nav-link active{
+  color: #6C63FF;
+}
+.nav-link:hover{
+  background-color: #6C63FF;
+  color: #fff;
+}
+/* .headertext{
+  position: absolute;
+  bottom: 50%;
+  right:50%;
+} */
+.home{
+  height: 100vh;
+}
+
+.headertext h1{
+  font-size: 5rem;
+  font-weight: 700;
+}
+.headertext p{
+  font-size: 2rem;
+  font-weight: 500;
+}
+/* <how we operate> */
+.contact h3, .howeop h3{
+  font-weight: 700;
+}
+.contact p, .accessibility p, .howeop p{
+  font-weight: 600;
+  font-size: larger;
+  white-space: pre;
+}
+/* <case files> */
+.casefiles, .lawyersection{
+  height: auto;
+}
+.accessibility h3, .caseheader h3{
+  /* font-size: 2rem; */
+  font-weight: 700;
+}
+.caseheader p{
+font-size: x-large;
+}
+.casefiles .card{
+  padding: 20px;
+}
+.casefiles .card .card-title h4{
+  font-size: x-large;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+.casefiles .card .card-text p{
+  font-weight: 600;
+}
+.headertext button, .casefiles .card .card-text button{
+  color: #fff;
+  background-color: #6C63FF;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+}
+.accessibility{
+  padding: 100px 0;
+}
+/* <footer> */
+.footer a{
+  text-decoration: none;
+}
