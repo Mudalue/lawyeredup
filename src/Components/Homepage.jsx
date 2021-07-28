@@ -23,7 +23,7 @@ const Homepage = () => {
         <div className="container-fluid">
           <div className="row">
             <div className="col-md-12 col-sm-6">
-              <div className="d-flex align-items-center headertext pt-5 animate__animated animate__bounceIn">
+              <div className="d-flex align-items-center headertext pt-5">
                 <div className="flex-fill text-center">
                   <h1>
                     Welcome to{" "}
@@ -42,9 +42,8 @@ const Homepage = () => {
           </div>
         </div>
       </section>
-      <section className="bg-grey py-5 howeop">
+      <section className="bg-grey py-5 howeop animate__animated animate__bounce animate__delay-2s">
         <div className="container">
-          
           <div className="row">
             <div className="col-md-6">
               <img src="/images/connect.svg" className="img-fluid" />
@@ -478,6 +477,36 @@ const Homepage = () => {
           </div>
         </div>
       </section>
+      {/* <div
+        id="carouselExampleControls"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active"></div>
+          <div class="carousel-item">
+            <img src="..." class="d-block w-100" alt="..." />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div> */}
       <section class="d-flex justify-content-between p-4 bgk-blue">
         <div class="me-5">
           <span className="text-white">
@@ -506,6 +535,7 @@ const Homepage = () => {
           </a>
         </div>
       </section>
+      <section></section>
       <div className="footer bg-dark">
         <Footer />
       </div>

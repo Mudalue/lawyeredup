@@ -48,7 +48,7 @@ body{
   height: 100vh;
 }
 
-.headertext h1{
+.aboutheader h1, .headertext h1{
   font-size: 5rem;
   font-weight: 700;
 }
@@ -57,8 +57,12 @@ body{
   font-weight: 500;
 }
 /* <how we operate> */
-.contact h3, .howeop h3{
+.aboutcontent h3, .contact h3, .howeop h3{
   font-weight: 700;
+}
+.aboutheader h4{
+  font-weight: 700;
+  font-size: xx-large;
 }
 .contact p, .accessibility p, .howeop p{
   font-weight: 600;
@@ -69,12 +73,19 @@ body{
 .casefiles, .lawyersection{
   height: auto;
 }
-.accessibility h3, .caseheader h3{
+.abouteam h3, .aboutheader h3, .accessibility h3, .caseheader h3{
   /* font-size: 2rem; */
   font-weight: 700;
 }
-.caseheader p{
+.abouteam p, .aboutheader p, .caseheader p{
 font-size: x-large;
+}
+.abouteam h6{
+  font-size: xx-large;
+  font-weight: 700;
+}
+.aboutcontent p{
+  font-size: large;
 }
 .casefiles .card{
   padding: 20px;
@@ -100,4 +111,88 @@ font-size: x-large;
 /* <footer> */
 .footer a{
   text-decoration: none;
+}
+
+/* <UserDashboard> */
+/* <Navbar> */
+.navbar img{
+  width:10%;
+  height: 10%;
+}
+.udashboardheader .container-fluid{
+  /* padding-top: 00px; */
+  padding: 100px;
+}
+/* <Content> */
+.udashboardcontent img{
+width: 25%;
+height: 25%
+}
+
+.udashboardheader{
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+}
+.udashboardcontent .row{
+  padding: 150px 100px 0 100px;
+}
+
+/* <Ribbon> */
+.box {
+  position: relative;
+  max-width: 600px;
+  width: 90%;
+  height: 400px;
+  background: #fff;
+  box-shadow: 0 0 15px rgba(0,0,0,.1);
+}
+.ribbon {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  position: absolute;
+}
+.ribbon::before,
+.ribbon::after {
+  position: absolute;
+  z-index: -1;
+  content: '';
+  display: block;
+  border: 5px solid #6C63FF;
+}
+.ribbon span {
+  position: absolute;
+  display: block;
+  width: 225px;
+  padding: 15px 0;
+  background-color: #6C63FF;
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+  color: #fff;
+  font: 700 18px/1 'Lato', sans-serif;
+  text-shadow: 0 1px 1px rgba(0,0,0,.2);
+  text-transform: uppercase;
+  text-align: center;
+}
+.ribbon-top-left {
+  top: -10px;
+  left: -10px;
+}
+.ribbon-top-left::before,
+.ribbon-top-left::after {
+  border-top-color: transparent;
+  border-left-color: transparent;
+}
+.ribbon-top-left::before {
+  top: 0;
+  right: 0;
+}
+.ribbon-top-left::after {
+  bottom: 0;
+  left: 0;
+}
+.ribbon-top-left span {
+  right: -25px;
+  top: 30px;
+  transform: rotate(-45deg);
 }
