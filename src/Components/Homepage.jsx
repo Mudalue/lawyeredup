@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "./Others/Navbar";
-import { Clipboard, User } from "react-feather";
+import { CheckCircle, Clipboard, User } from "react-feather";
 import {
   Facebook,
   GitHub,
@@ -8,9 +8,6 @@ import {
   Linkedin,
   Twitter,
   Twitch,
-  Mail,
-  Phone,
-  Home,
 } from "react-feather";
 
 import Footer from "./Others/Footer";
@@ -19,19 +16,29 @@ const Homepage = () => {
   return (
     <div>
       <Navbar />
-      <section className="home">
+      <section className="home bgk-blue">
         <div className="container-fluid">
           <div className="row">
-            <div className="col-md-12 col-sm-6">
+            <div
+              className="col-md-12 col-sm-6"
+              data-aos="fade-up"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="false"
+              data-aos-anchor-placement="top-center"
+            >
               <div className="d-flex align-items-center headertext pt-5">
                 <div className="flex-fill text-center">
-                  <h1>
+                  <h1 className="text-light">
                     Welcome to{" "}
-                    <span className="txt-blue fw-bold">LawyedUp</span>
+                    <span className="text-dark fw-bold">LawyedUp</span>
                   </h1>
-                  <p>a platform that gets justice for you</p>
+                  <p className="text-light">a platform that gets justice for you</p>
                   <div className="div">
-                    <button className="btn bgk-blue btn-lg">Get started</button>
+                    <button className="btn bg-light btn-lg px-5 py-3 fw-boulder text-dark">Get started</button>
                   </div>
                 </div>
 
@@ -42,13 +49,13 @@ const Homepage = () => {
           </div>
         </div>
       </section>
-      <section className="bg-grey py-5 howeop animate__animated animate__bounce animate__delay-2s">
+      <section className=" howeop ">
         <div className="container">
           <div className="row">
-            <div className="col-md-6">
+            <div className="col-md-6" data-aos="fade-right">
               <img src="/images/connect.svg" className="img-fluid" />
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6 " data-aos="zoom-in">
               <div className="pt-5 text-muted p-5">
                 <h3 className="pt-5">What we do?</h3>
                 <p className="lh-lg">
@@ -57,16 +64,47 @@ const Homepage = () => {
                   <span className="txt-blue fw-bold">LawyedUp</span> brings
                   <br /> you closer to justice in your time of need{" "}
                 </p>
+                <div>
+                  <button className="btn btn-blue  btn-lg">see more</button>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+      <section className="steps bg-dark">
+        <div className="container ">
+          <div className="row">
+          <div className="col-md-6 ">
+              <img src="./images/task-list.svg" className="img-fluid" data-aos="fade-up-right"/>
+            </div>
+            <div className="col-md-6 px-4 text-light ">
+              <div className="d-flex flex-column align-items-start justify-content-start p-5" data-aos="fade-left">
+                 <div>
+                   <h5 className="txt-blue">Steps to follow</h5>
+                   <p>Find justice by following the staps below</p>
+                 </div>
+                 <div>
+                   <p><span className="txt-blue"><CheckCircle size={22}/></span>  Create an account</p>
+                   <p><span className="txt-blue"><CheckCircle size={22}/></span>  Login</p>
+                   <p><span className="txt-blue"><CheckCircle size={22}/></span>  State your case</p>
+                   <p><span className="txt-blue"><CheckCircle size={22}/></span>  Get lawyered up</p>
+                   <p><span className="txt-blue"><CheckCircle size={22}/></span>  Payment</p>
+                 </div>
+                 <div>
+                   <button className="btn btn-blue btn-lg">State your case</button>
+                 </div>
+              </div>
+            </div>
+           
+          </div>
+        </div>
+      </section>
       {/* case section */}
-      <section className="casefiles mt-5">
+      <section className="casefiles ">
         <div className="container">
           <div className="row">
-            <div className="col-md-12 py-4 text-center">
+            <div className="col-md-12 py-4 text-center" >
               <div className="caseheader">
                 <h3>Case Files</h3>
                 <p className="text-muted">
@@ -77,8 +115,8 @@ const Homepage = () => {
             </div>
           </div>
           <div className="row mt-3">
-            <div className="col-md-4">
-              <div className="card">
+            <div className="col-md-4 " data-aos="zoom-in">
+              <div className="card" >
                 <div className="card-body">
                   <div className="card-title">
                     <h4>
@@ -87,18 +125,18 @@ const Homepage = () => {
                   </div>
                   <div className="card-text">
                     <p>Category: Homicide</p>
-                    <p>Name of Plaintif: John Doe</p>
+                    <p>Name of Plaintiff: John Doe</p>
                     <p>
                       Status: <span className="badge bg-danger">Urgent</span>
                     </p>
                     <div className="d-flex align-items-center justify-content-center">
-                      <button className="btn btn-md btn-info">Take case</button>
+                      <button className="btn btn-lg btn-info">see more</button>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="col-md-4">
+            <div className="col-md-4 " data-aos="zoom-in">
               <div className="card">
                 <div className="card-body">
                   <div className="card-title">
@@ -108,18 +146,18 @@ const Homepage = () => {
                   </div>
                   <div className="card-text">
                     <p>Category: Murder</p>
-                    <p>Name of Plaintif: John Doe</p>
+                    <p>Name of Plaintiff: John Doe</p>
                     <p>
                       Status: <span className="badge bg-danger">Urgent</span>
                     </p>
                     <div className="d-flex align-items-center justify-content-center">
-                      <button className="btn btn-md btn-info">Take case</button>
+                      <button className="btn btn-lg btn-info">see more</button>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="col-md-4">
+            <div className="col-md-4" data-aos="zoom-in">
               <div className="card">
                 <div className="card-body">
                   <div className="card-title">
@@ -129,19 +167,19 @@ const Homepage = () => {
                   </div>
                   <div className="card-text">
                     <p>Category: Bail</p>
-                    <p>Name of Plaintif: John Doe</p>
+                    <p>Name of Plaintiff: John Doe</p>
                     <p>
                       Status: <span className="badge bg-warning">2 days</span>
                     </p>
                     <div className="d-flex align-items-center justify-content-center">
-                      <button className="btn btn-md btn-info">Take case</button>
+                      <button className="btn btn-lg btn-info">see more</button>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div className="row mt-3">
+          <div className="row mt-3" data-aos="zoom-in">
             <div className="col-md-4">
               <div className="card">
                 <div className="card-body">
@@ -152,18 +190,18 @@ const Homepage = () => {
                   </div>
                   <div className="card-text">
                     <p>Category: Theft</p>
-                    <p>Name of Plaintif: John Doe</p>
+                    <p>Name of Plaintiff: John Doe</p>
                     <p>
                       Status: <span className="badge bg-danger">Urgent</span>
                     </p>
                     <div className="d-flex align-items-center justify-content-center">
-                      <button className="btn btn-md btn-info">Take case</button>
+                      <button className="btn btn-lg btn-info">see more</button>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="col-md-4">
+            <div className="col-md-4 " data-aos="zoom-in">
               <div className="card">
                 <div className="card-body">
                   <div className="card-title">
@@ -173,18 +211,18 @@ const Homepage = () => {
                   </div>
                   <div className="card-text">
                     <p>Category: Money laundry</p>
-                    <p>Name of Plaintif: John Doe</p>
+                    <p>Name of Plaintiff: John Doe</p>
                     <p>
                       Status: <span className="badge bg-danger">Urgent</span>
                     </p>
                     <div className="d-flex align-items-center justify-content-center">
-                      <button className="btn btn-md btn-info">Take case</button>
+                      <button className="btn btn-lg btn-info">see more</button>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="col-md-4">
+            <div className="col-md-4" data-aos="zoom-in">
               <div className="card">
                 <div className="card-body">
                   <div className="card-title">
@@ -195,12 +233,12 @@ const Homepage = () => {
                   </div>
                   <div className="card-text">
                     <p>Category: Fraud</p>
-                    <p>Name of Plaintif: John Doe</p>
+                    <p>Name of Plaintiff: John Doe</p>
                     <p>
                       Status: <span className="badge bg-danger">Urgent</span>
                     </p>
                     <div className="d-flex align-items-center justify-content-center">
-                      <button className="btn btn-md btn-info">Take case</button>
+                      <button className="btn btn-lg btn-info">see more</button>
                     </div>
                   </div>
                 </div>
@@ -209,7 +247,8 @@ const Homepage = () => {
           </div>
         </div>
       </section>
-      <section className="lawyersection bg-grey mt-5 ">
+
+      <section className="lawyersection  mt-5 ">
         <div className="container pb-5">
           <div className="row">
             <div className="col-md-12">
@@ -437,7 +476,7 @@ const Homepage = () => {
       <section className="mt-5 accessibility">
         <div className="container">
           <div className="row">
-            <div className="col-md-6">
+            <div className="col-md-6 " data-aos="fade-right">
               <div className="dev py-5 pl-5 lh-lg">
                 <h3>Accessiblity</h3>
                 <p>
@@ -459,11 +498,11 @@ const Homepage = () => {
       <section className="contact">
         <div className="container">
           <div className="row py-5">
-            <div className="col-md-6">
-              <img src="images/call-center.svg" className="img-fluid" />
-            </div>
             <div className="col-md-6 ">
-              <div className="pt-5 lh-lg">
+              <img src="images/call-center.svg " className="img-fluid pr-5" />
+            </div>
+            <div className="col-md-6 " data-aos="fade-right">
+              <div className="pt-5 lh-lg pr-5">
                 <h3>Contact us</h3>
                 <p>
                   Contact us through our various channels and social media
@@ -471,7 +510,7 @@ const Homepage = () => {
                 </p>
               </div>
               <div>
-                <button className="btn btn-md btn-blue">Contact us</button>
+                <button className="btn btn-lg btn-blue">Contact us</button>
               </div>
             </div>
           </div>

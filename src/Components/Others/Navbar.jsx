@@ -5,7 +5,7 @@ const Navbar = () => {
     <>
       <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light p-3">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="/">
             LawyedUp
           </a>
           <button
@@ -30,17 +30,17 @@ const Navbar = () => {
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="/About-us">
                   About 
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="/Login">
                   Login
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="/Signin">
                   Sign Up
                 </a>
               </li>

@@ -1,151 +1,204 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap');
-*{
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap");
+* {
   margin: 0;
 }
-body{
-  font-family: 'Cormorant Garamond', serif;
+body {
+  font-family: "Cormorant Garamond", serif;
 }
 
 /* colors */
- .bgk-blue{
-  background-color: #6C63FF!important;
+.bgk-blue {
+  background-color: #6c63ff !important;
 }
-.btn-blue{
+.btn-blue {
   color: #fff;
-  background-color: #6C63FF!important;
+  background-color: #6c63ff !important;
 }
-.txt-blue{
-  color: #6C63FF;
+.txt-blue {
+  color: #6c63ff;
 }
-.bg-grey{
-  background-color:	#DCDCDC;
+.bg-grey {
+  background-color: #dcdcdc;
 }
 
-.nav{
+.nav {
   padding: 15px;
 }
-.navbar-brand{
+.navbar-brand {
   font-weight: 700;
   font-size: xx-large;
 }
-.navbar-nav{
-  font-size:x-large;
+.navbar-nav {
+  font-size: x-large;
   font-weight: 600;
 }
-.nav-link active{
-  color: #6C63FF;
+.nav-link active {
+  color: #6c63ff;
 }
-.nav-link:hover{
+/* .nav-link:hover{
   background-color: #6C63FF;
   color: #fff;
-}
+} */
 /* .headertext{
   position: absolute;
   bottom: 50%;
   right:50%;
 } */
-.home{
+.home {
   height: 100vh;
 }
+.howeop {
+  padding:  150px 0 50px 0!important;
+}
+.steps{
+  margin: 150px 0 50px 0!important;
+  padding: 100px;
+}
+.steps p{
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.steps button{
+  font-weight: 600;
+   font-size: x-large;
+}
+.steps h5{
+  font-weight: 700;
+  font-size: 2rem;
+}
+.casefiles{
+  padding:  150px  0 100px 0;
+}
 
-.aboutheader h1, .headertext h1{
+.headertext h1,
+.udashboardcontent h1,
+.udashboardheader h1,
+.lawyerProfile h1 {
   font-size: 5rem;
   font-weight: 700;
 }
-.headertext p{
+.aboutheader h1 {
+  font-size: 4rem;
+  font-weight: 600;
+}
+.headertext p,
+.udashboardheader p,
+.lawyerProfile P {
   font-size: 2rem;
   font-weight: 500;
 }
 /* <how we operate> */
-.aboutcontent h3, .contact h3, .howeop h3{
+.aboutcontent h3,
+.contact h3,
+.howeop h3 {
   font-weight: 700;
 }
-.aboutheader h4{
+h5 {
+  font-weight: 500;
+  font-size: large;
+}
+.aboutheader h4 {
   font-weight: 700;
   font-size: xx-large;
 }
-.contact p, .accessibility p, .howeop p{
+.contact p,
+.accessibility p,
+.howeop p,
+.udashboardcontent p {
   font-weight: 600;
   font-size: larger;
   white-space: pre;
 }
 /* <case files> */
-.casefiles, .lawyersection{
+.casefiles,
+.lawyersection {
   height: auto;
 }
-.abouteam h3, .aboutheader h3, .accessibility h3, .caseheader h3{
+.abouteam h3,
+.aboutheader h3,
+.accessibility h3,
+.caseheader h3 {
   /* font-size: 2rem; */
   font-weight: 700;
 }
-.abouteam p, .aboutheader p, .caseheader p{
-font-size: x-large;
+.abouteam p,
+.aboutheader p,
+.caseheader p {
+  font-size: x-large;
 }
-.abouteam h6{
+.abouteam h6,
+.udashboardcontent h6 {
   font-size: xx-large;
   font-weight: 700;
 }
-.aboutcontent p{
+.aboutcontent p {
   font-size: large;
 }
-.casefiles .card{
+.casefiles .card {
   padding: 20px;
 }
-.casefiles .card .card-title h4{
+.casefiles .card .card-title h4 {
   font-size: x-large;
   font-weight: 700;
   padding-bottom: 10px;
 }
-.casefiles .card .card-text p{
+.casefiles .card .card-text p {
   font-weight: 600;
 }
-.headertext button, .casefiles .card .card-text button{
+.headertext button,
+.casefiles .card .card-text button {
   color: #fff;
-  background-color: #6C63FF;
+  background-color: #6c63ff;
   border: none;
   border-radius: 6px;
   font-weight: 600;
 }
-.accessibility{
+.accessibility {
   padding: 100px 0;
 }
 /* <footer> */
-.footer a{
+.footer a {
   text-decoration: none;
 }
 
 /* <UserDashboard> */
 /* <Navbar> */
-.navbar img{
-  width:10%;
+.navbar img {
+  width: 10%;
   height: 10%;
 }
-.udashboardheader .container-fluid{
+.udashboardheader .container-fluid {
   /* padding-top: 00px; */
-  padding: 100px;
+  padding: 150px 0 30px 0;
+  width: 100%;
 }
 /* <Content> */
-.udashboardcontent img{
-width: 25%;
-height: 25%
+.udashboardheader .card {
+  height: auto;
+}
+.udashboardcontent img {
+  width: 40%;
+  height: 40%;
 }
 
-.udashboardheader{
+.udashboardheader {
   position: absolute;
   z-index: -1;
   width: 100%;
 }
-.udashboardcontent .row{
-  padding: 150px 100px 0 100px;
+.udashboardcontent .row {
+  padding: 140px 0px 0 0px;
 }
-
+/* .udashboardcontent{
+width: 100%;
+} */
 /* <Ribbon> */
 .box {
   position: relative;
-  max-width: 600px;
-  width: 90%;
   height: 400px;
+  width: 100%;
   background: #fff;
-  box-shadow: 0 0 15px rgba(0,0,0,.1);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 .ribbon {
   width: 150px;
@@ -157,20 +210,20 @@ height: 25%
 .ribbon::after {
   position: absolute;
   z-index: -1;
-  content: '';
+  content: "";
   display: block;
-  border: 5px solid #6C63FF;
+  border: 5px solid #6c63ff;
 }
 .ribbon span {
   position: absolute;
   display: block;
   width: 225px;
   padding: 15px 0;
-  background-color: #6C63FF;
-  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+  background-color: #6c63ff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   color: #fff;
-  font: 700 18px/1 'Lato', sans-serif;
-  text-shadow: 0 1px 1px rgba(0,0,0,.2);
+  font: 700 18px/1 "Lato", sans-serif;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
   text-transform: uppercase;
   text-align: center;
 }
@@ -195,4 +248,68 @@ height: 25%
   right: -25px;
   top: 30px;
   transform: rotate(-45deg);
+}
+/* <lawyersection> */
+/* .lawyerProfile img{
+width: 40%;
+height: 100%;
+} */
+
+.profileinfo p{
+  font-weight: 400;
+  font-size: large;
+}
+.profileinfo h5{
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.profileinfo h6{
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+.profileinfo h1{
+  font-size: 4rem;
+  font-weight: 700;
+}
+.progress-bar{
+  font-size: 1rem;
+  font-weight: 500;
+}
+/* <Case Info> */
+/* .caseinfo{
+  position: absolute;
+  top:0;
+  width: 100%;
+  height:100%;
+  
+} */
+.caseinfo{
+  padding: 100px 0 0 0;
+}
+.caseinfo h4{
+  font-weight: 700;
+  font-size: 1.7rem;
+}
+.caseinfo p{
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: gray;
+}
+/* <contactsection/> */
+.contactsection{
+  padding: 100px 0
+}
+.contactsection h1{
+  font-weight: 700;
+  font-size: 5rem;
+}
+.contactsection p{
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.form{
+  padding: 200px 50px 50px 0;
+}
+.signin{
+  padding: 150px 200px 50px 0;
 }

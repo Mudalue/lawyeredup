@@ -17,10 +17,10 @@ const Aboutus = () => {
     <>
       <Navbar />
       <section className="bg-grey py-5 lh-lg aboutheader">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-8 pt-5">
-              <div>
+        <div className="container-fluid p-5">
+          <div className="row g-5 p-5">
+            <div className="col-md-8 pt-5 justify-content-center" data-aos="zoom-in">
+              <div className="text-start pl-5 ">
                 <h4>Who are we....</h4>
                 <h1>People, Innovators and Creators</h1>
               </div>
@@ -34,7 +34,7 @@ const Aboutus = () => {
                 </p>
               </div>
             </div>
-            <div className="col-md-4 pt-5">
+            <div className="col-md-4 pt-5 text-center" data-aos="fade-left">
               <img src="./images/About.svg" className="img-fluid" />
             </div>
           </div>
@@ -43,7 +43,11 @@ const Aboutus = () => {
       <section className="py-5 mt-5 lh-lg aboutcontent my-5">
         <div className="container">
           <div className="row">
-            <div className="col-md-4">
+            <div
+              className="col-md-4"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+            >
               <div>
                 <h3>Our Story</h3>
                 <p>
@@ -54,7 +58,11 @@ const Aboutus = () => {
                 </p>
               </div>
             </div>
-            <div className="col-md-4">
+            <div
+              className="col-md-4"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+            >
               <div>
                 <h3>Our Vision</h3>
                 <p>
@@ -65,7 +73,11 @@ const Aboutus = () => {
                 </p>
               </div>
             </div>
-            <div className="col-md-4">
+            <div
+              className="col-md-4"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+            >
               <div>
                 <h3>Core Values</h3>
                 <p>
@@ -92,7 +104,7 @@ const Aboutus = () => {
             </div>
           </div>
           <div className="row">
-            <div className="col-md-4">
+            <div className="col-md-4" data-aos="zoom-in">
               <div>
                 <img
                   src="./images/Contact.png"
@@ -103,7 +115,7 @@ const Aboutus = () => {
                 <p class="fst-italic text-center">Senior Software Developer</p>
               </div>
             </div>
-            <div className="col-md-4">
+            <div className="col-md-4" data-aos="zoom-in">
               <div>
                 <img
                   src="./images/Contact.png"
@@ -114,7 +126,7 @@ const Aboutus = () => {
                 <p class="fst-italic text-center">Junior Software Developer</p>
               </div>
             </div>
-            <div className="col-md-4">
+            <div className="col-md-4" data-aos="zoom-in">
               <div>
                 <img
                   src="./images/Contact.png"
