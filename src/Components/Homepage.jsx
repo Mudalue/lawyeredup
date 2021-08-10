@@ -30,7 +30,7 @@ const Homepage = () => {
               data-aos-once="false"
               data-aos-anchor-placement="top-center"
             >
-              <div className="d-flex align-items-center headertext pt-5">
+              <div className="d-flex align-items-center headertext pt-5 flex-wrap">
                 <div className="flex-fill text-center">
                   <h1 className="text-light">
                     Welcome to{" "}
@@ -38,11 +38,17 @@ const Homepage = () => {
                   </h1>
                   <p className="text-light">a platform that gets justice for you</p>
                   <div className="div">
+                    <a href="/Signin">
                     <button className="btn bg-light btn-lg px-5 py-3 fw-boulder text-dark">Get started</button>
+                    </a>
+
+                    
                   </div>
                 </div>
-
-                <img src="images/judge.svg" class="img-fluid" />
+ <div>
+ <img src="images/judge.svg" class="img-fluid" />
+ </div>
+               
               </div>
             </div>
             <div className="col-md-5 p-4"></div>
@@ -56,7 +62,7 @@ const Homepage = () => {
               <img src="/images/connect.svg" className="img-fluid" />
             </div>
             <div className="col-md-6 " data-aos="zoom-in">
-              <div className="pt-5 text-muted p-5">
+              <div className="pt-5  p-5">
                 <h3 className="pt-5">What we do?</h3>
                 <p className="lh-lg">
                   See yourself as the location icon coloured black and the{" "}
@@ -82,7 +88,7 @@ const Homepage = () => {
               <div className="d-flex flex-column align-items-start justify-content-start p-5" data-aos="fade-left">
                  <div>
                    <h5 className="txt-blue">Steps to follow</h5>
-                   <p>Find justice by following the staps below</p>
+                   <p>Find justice by following the steps below</p>
                  </div>
                  <div>
                    <p><span className="txt-blue"><CheckCircle size={22}/></span>  Create an account</p>
@@ -502,7 +508,7 @@ const Homepage = () => {
               <img src="images/call-center.svg " className="img-fluid pr-5" />
             </div>
             <div className="col-md-6 " data-aos="fade-right">
-              <div className="pt-5 lh-lg pr-5">
+              <div className="pt-5 lh-lg pr-5 ">
                 <h3>Contact us</h3>
                 <p>
                   Contact us through our various channels and social media

@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 * {
   margin: 0;
 }
 body {
-  font-family: "Cormorant Garamond", serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* colors */
@@ -29,8 +29,8 @@ body {
   font-size: xx-large;
 }
 .navbar-nav {
-  font-size: x-large;
-  font-weight: 600;
+  font-size: large;
+  font-weight: 500;
 }
 .nav-link active {
   color: #6c63ff;
@@ -47,6 +47,9 @@ body {
 .home {
   height: 100vh;
 }
+.headertext span{
+  font-weight: 800;
+}
 .howeop {
   padding:  150px 0 50px 0!important;
 }
@@ -55,16 +58,16 @@ body {
   padding: 100px;
 }
 .steps p{
-  font-size: 1.5rem;
-  font-weight: 700;
+  font-size: 1.0rem;
+  font-weight: 300;
 }
 .steps button{
-  font-weight: 600;
-   font-size: x-large;
+  font-weight: 400;
+   font-size: large;
 }
 .steps h5{
-  font-weight: 700;
-  font-size: 2rem;
+  font-weight: 600;
+  font-size: 1.5rem;
 }
 .casefiles{
   padding:  150px  0 100px 0;
@@ -74,8 +77,8 @@ body {
 .udashboardcontent h1,
 .udashboardheader h1,
 .lawyerProfile h1 {
-  font-size: 5rem;
-  font-weight: 700;
+  font-size: 4rem;
+  font-weight: 600;
 }
 .aboutheader h1 {
   font-size: 4rem;
@@ -84,14 +87,15 @@ body {
 .headertext p,
 .udashboardheader p,
 .lawyerProfile P {
-  font-size: 2rem;
-  font-weight: 500;
+  font-size: 1.5rem;
+  font-weight: 400;
 }
 /* <how we operate> */
 .aboutcontent h3,
 .contact h3,
 .howeop h3 {
-  font-weight: 700;
+  font-weight: 600;
+  word-break: break-all;
 }
 h5 {
   font-weight: 500;
@@ -105,7 +109,7 @@ h5 {
 .accessibility p,
 .howeop p,
 .udashboardcontent p {
-  font-weight: 600;
+  font-weight: 300;
   font-size: larger;
   white-space: pre;
 }
@@ -119,12 +123,12 @@ h5 {
 .accessibility h3,
 .caseheader h3 {
   /* font-size: 2rem; */
-  font-weight: 700;
+  font-weight: 600;
 }
 .abouteam p,
 .aboutheader p,
 .caseheader p {
-  font-size: x-large;
+  font-size: large;
 }
 .abouteam h6,
 .udashboardcontent h6 {
@@ -167,10 +171,12 @@ h5 {
   width: 10%;
   height: 10%;
 }
-.udashboardheader .container-fluid {
-  /* padding-top: 00px; */
-  padding: 150px 0 30px 0;
-  width: 100%;
+.udashboard{
+  padding: 60px 30px 0 30px;
+}
+.udashboard .nav button {
+  padding: 15px 100px;
+  
 }
 /* <Content> */
 .udashboardheader .card {
@@ -308,8 +314,8 @@ height: 100%;
   font-size: 1.5rem;
 }
 .form{
-  padding: 200px 50px 50px 0;
+  padding: 128px 50px 50px 0;
 }
 .signin{
-  padding: 150px 200px 50px 0;
+  padding: 100px 200px 50px 0;
 }
