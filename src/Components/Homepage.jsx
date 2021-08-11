@@ -36,19 +36,20 @@ const Homepage = () => {
                     Welcome to{" "}
                     <span className="text-dark fw-bold">LawyedUp</span>
                   </h1>
-                  <p className="text-light">a platform that gets justice for you</p>
+                  <p className="text-light">
+                    a platform that gets justice for you
+                  </p>
                   <div className="div">
                     <a href="/Signin">
-                    <button className="btn bg-light btn-lg px-5 py-3 fw-boulder text-dark">Get started</button>
+                      <button className="btn bg-light btn-lg px-5 py-3 fw-boulder text-dark">
+                        Get started
+                      </button>
                     </a>
-
-                    
                   </div>
                 </div>
- <div>
- <img src="images/judge.svg" class="img-fluid" />
- </div>
-               
+                <div>
+                  <img src="images/judge.svg" class="img-fluid" />
+                </div>
               </div>
             </div>
             <div className="col-md-5 p-4"></div>
@@ -81,28 +82,61 @@ const Homepage = () => {
       <section className="steps bg-dark">
         <div className="container ">
           <div className="row">
-          <div className="col-md-6 ">
-              <img src="./images/task-list.svg" className="img-fluid" data-aos="fade-up-right"/>
+            <div className="col-md-6 ">
+              <img
+                src="./images/task-list.svg"
+                className="img-fluid"
+                data-aos="fade-up-right"
+              />
             </div>
             <div className="col-md-6 px-4 text-light ">
-              <div className="d-flex flex-column align-items-start justify-content-start p-5" data-aos="fade-left">
-                 <div>
-                   <h5 className="txt-blue">Steps to follow</h5>
-                   <p>Find justice by following the steps below</p>
-                 </div>
-                 <div>
-                   <p><span className="txt-blue"><CheckCircle size={22}/></span>  Create an account</p>
-                   <p><span className="txt-blue"><CheckCircle size={22}/></span>  Login</p>
-                   <p><span className="txt-blue"><CheckCircle size={22}/></span>  State your case</p>
-                   <p><span className="txt-blue"><CheckCircle size={22}/></span>  Get lawyered up</p>
-                   <p><span className="txt-blue"><CheckCircle size={22}/></span>  Payment</p>
-                 </div>
-                 <div>
-                   <button className="btn btn-blue btn-lg">State your case</button>
-                 </div>
+              <div
+                className="d-flex flex-column align-items-start justify-content-start p-5"
+                data-aos="fade-left"
+              >
+                <div>
+                  <h5 className="txt-blue">Steps to follow</h5>
+                  <p>Find justice by following the steps below</p>
+                </div>
+                <div>
+                  <p>
+                    <span className="txt-blue">
+                      <CheckCircle size={22} />
+                    </span>{" "}
+                    Create an account
+                  </p>
+                  <p>
+                    <span className="txt-blue">
+                      <CheckCircle size={22} />
+                    </span>{" "}
+                    Login
+                  </p>
+                  <p>
+                    <span className="txt-blue">
+                      <CheckCircle size={22} />
+                    </span>{" "}
+                    State your case
+                  </p>
+                  <p>
+                    <span className="txt-blue">
+                      <CheckCircle size={22} />
+                    </span>{" "}
+                    Get lawyered up
+                  </p>
+                  <p>
+                    <span className="txt-blue">
+                      <CheckCircle size={22} />
+                    </span>{" "}
+                    Payment
+                  </p>
+                </div>
+                <div>
+                  <button className="btn btn-blue btn-lg">
+                    State your case
+                  </button>
+                </div>
               </div>
             </div>
-           
           </div>
         </div>
       </section>
@@ -110,7 +144,7 @@ const Homepage = () => {
       <section className="casefiles ">
         <div className="container">
           <div className="row">
-            <div className="col-md-12 py-4 text-center" >
+            <div className="col-md-12 py-4 text-center">
               <div className="caseheader">
                 <h3>Case Files</h3>
                 <p className="text-muted">
@@ -122,7 +156,7 @@ const Homepage = () => {
           </div>
           <div className="row mt-3">
             <div className="col-md-4 " data-aos="zoom-in">
-              <div className="card" >
+              <div className="card">
                 <div className="card-body">
                   <div className="card-title">
                     <h4>
