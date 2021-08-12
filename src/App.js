@@ -11,10 +11,14 @@ import CaseInfo from './Components/Others/CaseInfo';
 import Contact from './Components/Others/Contact';
 import Login from './Components/Others/Login';
 import Signin from './Components/Others/Signin';
+import CaseForm from './Components/Others/CaseForm';
 
 function App() {
   return (
     <Switch>
+      <Route exact path="/create-case">
+        <CaseForm/>
+      </Route>
       <Route exact path="/Signin">
         <Signin/>
       </Route>

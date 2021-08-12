@@ -56,7 +56,7 @@ const Homepage = () => {
           </div>
         </div>
       </section>
-      <section className=" howeop ">
+      <section className="howeop">
         <div className="container">
           <div className="row">
             <div className="col-md-6" data-aos="fade-right">

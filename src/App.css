@@ -319,3 +319,29 @@ height: 100%;
 .signin{
   padding: 100px 200px 50px 0;
 }
+/* <create case> */
+.createcase{
+  height: auto;
+  background-color:#6c63ff;
+}
+.createcase h4{
+  font-weight: 600;
+  font-size: xx-large;
+}
+.createcase img{
+ padding: 120px 0 100px 150px
+}
+.createcase .col-md-5{
+  padding: 120px 60px 100px 0;
+}
+.createcase form label{
+  font-weight: 600;
+  padding-bottom: 5px;
+}
+.createcase form input{
+  height: 55px;
+}
+.createcase form button{
+  font-weight: 500;
+  font-size: x-large;
+}
