@@ -18,41 +18,45 @@ const Homepage = () => {
       <Navbar />
       <section className="home bgk-blue">
         <div className="container-fluid">
-          <div className="row">
-            <div
-              className="col-md-12 col-sm-6"
-              data-aos="fade-up"
-              data-aos-offset="200"
-              data-aos-delay="50"
-              data-aos-duration="1000"
-              data-aos-easing="ease-in-out"
-              data-aos-mirror="true"
-              data-aos-once="false"
-              data-aos-anchor-placement="top-center"
-            >
-              <div className="d-flex align-items-center headertext pt-5 flex-wrap">
-                <div className="flex-fill text-center">
-                  <h1 className="text-light">
-                    Welcome to{" "}
-                    <span className="text-dark fw-bold">LawyedUp</span>
-                  </h1>
-                  <p className="text-light">
-                    a platform that gets justice for you
-                  </p>
-                  <div className="div">
+          <div
+            className="row"
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            data-aos-anchor-placement="top-center"
+          >
+            <div className="col-md-6 col-sm-6">
+              <div className=" headertext">
+                <h1 className="text-light">
+                  Welcome to <span className="text-dark fw-bold">LawyedUp</span>
+                </h1>
+                <p className="text-light">
+                  Your connection to justice
+                </p>
+
+                <div className="div">
                     <a href="/Signin">
-                      <button className="btn bg-light btn-lg px-5 py-3 fw-boulder text-dark">
+                      <button className="btn bg-light btn-md px-4 py-2 fw-boulder text-dark">
                         Get started
                       </button>
                     </a>
                   </div>
-                </div>
-                <div>
-                  <img src="images/judge.svg" class="img-fluid" />
-                </div>
+              </div>
+
+            </div>
+            <div className="col-md-6">
+              <div className="pt-5 homeimg">
+                <img
+                  src="images/judge.svg"
+                  class="img-fluid"
+                />
               </div>
             </div>
-            <div className="col-md-5 p-4"></div>
+            {/* <div className="col-md-5 p-4"></div> */}
           </div>
         </div>
       </section>
@@ -72,7 +76,7 @@ const Homepage = () => {
                   <br /> you closer to justice in your time of need{" "}
                 </p>
                 <div>
-                  <button className="btn btn-blue  btn-lg">see more</button>
+                  <button className="btn btn-blue  btn-md">see more</button>
                 </div>
               </div>
             </div>
@@ -95,7 +99,7 @@ const Homepage = () => {
                 data-aos="fade-left"
               >
                 <div>
-                  <h5 className="txt-blue">Steps to follow</h5>
+                  <h3 className="txt-blue">Steps to follow</h3>
                   <p>Find justice by following the steps below</p>
                 </div>
                 <div>
@@ -144,7 +148,7 @@ const Homepage = () => {
       <section className="casefiles ">
         <div className="container">
           <div className="row">
-            <div className="col-md-12 py-4 text-center">
+            <div className="col-md-12 text-center">
               <div className="caseheader">
                 <h3>Case Files</h3>
                 <p className="text-muted">
@@ -170,7 +174,7 @@ const Homepage = () => {
                       Status: <span className="badge bg-danger">Urgent</span>
                     </p>
                     <div className="d-flex align-items-center justify-content-center">
-                      <button className="btn btn-lg btn-info">see more</button>
+                      <button className="btn btn-md btn-info">see more</button>
                     </div>
                   </div>
                 </div>
@@ -191,7 +195,7 @@ const Homepage = () => {
                       Status: <span className="badge bg-danger">Urgent</span>
                     </p>
                     <div className="d-flex align-items-center justify-content-center">
-                      <button className="btn btn-lg btn-info">see more</button>
+                      <button className="btn btn-md btn-info">see more</button>
                     </div>
                   </div>
                 </div>
@@ -212,7 +216,7 @@ const Homepage = () => {
                       Status: <span className="badge bg-warning">2 days</span>
                     </p>
                     <div className="d-flex align-items-center justify-content-center">
-                      <button className="btn btn-lg btn-info">see more</button>
+                      <button className="btn btn-md btn-info">see more</button>
                     </div>
                   </div>
                 </div>
@@ -235,7 +239,7 @@ const Homepage = () => {
                       Status: <span className="badge bg-danger">Urgent</span>
                     </p>
                     <div className="d-flex align-items-center justify-content-center">
-                      <button className="btn btn-lg btn-info">see more</button>
+                      <button className="btn btn-md btn-info">see more</button>
                     </div>
                   </div>
                 </div>
@@ -256,7 +260,7 @@ const Homepage = () => {
                       Status: <span className="badge bg-danger">Urgent</span>
                     </p>
                     <div className="d-flex align-items-center justify-content-center">
-                      <button className="btn btn-lg btn-info">see more</button>
+                      <button className="btn btn-md btn-info">see more</button>
                     </div>
                   </div>
                 </div>
@@ -278,7 +282,7 @@ const Homepage = () => {
                       Status: <span className="badge bg-danger">Urgent</span>
                     </p>
                     <div className="d-flex align-items-center justify-content-center">
-                      <button className="btn btn-lg btn-info">see more</button>
+                      <button className="btn btn-md btn-info">see more</button>
                     </div>
                   </div>
                 </div>
@@ -328,13 +332,13 @@ const Homepage = () => {
                   <div class="carousel-item active">
                     <div className="row">
                       <div className="col-md-4">
-                        <div class="card pt-4" style={{ width: "18rem;" }}>
+                        <div class="card p-5" style={{ width: "15rem;" }}>
                           <img
                             src="./images/pic.png"
                             class="rounded-circle card-img-top img-fluid pt-4"
                             alt="..."
                           />
-                          <div class="card-body">
+                          <div class="card-body px-5 pt-4">
                             <div class="card-title">
                               <h4>
                                 <User size={25} className="pb-1" /> Profile
@@ -351,19 +355,19 @@ const Homepage = () => {
                               </p>
                             </div>
                             <a href="#" class="btn bgk-blue text-light">
-                              Contact
+                            contact
                             </a>
                           </div>
                         </div>
                       </div>
                       <div className="col-md-4">
-                        <div class="card pt-4" style={{ width: "18rem;" }}>
+                        <div class="card p-5" style={{ width: "18rem;" }}>
                           <img
                             src="./images/pic.png"
                             class="rounded-circle card-img-top img-fluid pt-4"
                             alt="..."
                           />
-                          <div class="card-body">
+                          <div class="card-body px-5 pt-4">
                             <div class="card-title">
                               <h4>
                                 <User size={25} className="pb-1" /> Profile
@@ -386,13 +390,13 @@ const Homepage = () => {
                         </div>
                       </div>
                       <div className="col-md-4">
-                        <div class="card pt-4" style={{ width: "18rem;" }}>
+                        <div class="card p-5" style={{ width: "18rem;" }}>
                           <img
                             src="./images/pic.png"
                             class="rounded-circle card-img-top img-fluid pt-4"
                             alt="..."
                           />
-                          <div class="card-body">
+                          <div class="card-body px-5 pt-4">
                             <div class="card-title">
                               <h4>
                                 <User size={25} className="pb-1" /> Profile
@@ -419,13 +423,13 @@ const Homepage = () => {
                   <div class="carousel-item">
                     <div className="row">
                       <div className="col-md-4">
-                        <div class="card pt-4" style={{ width: "18rem;" }}>
+                        <div class="card p-5" style={{ width: "18rem;" }}>
                           <img
                             src="./images/pic.png"
                             class="rounded-circle card-img-top img-fluid pt-4"
                             alt="..."
                           />
-                          <div class="card-body">
+                          <div class="card-body px-5 pt-4">
                             <div class="card-title">
                               <h4>
                                 <User size={25} className="pb-1" /> Profile
@@ -448,13 +452,13 @@ const Homepage = () => {
                         </div>
                       </div>
                       <div className="col-md-4">
-                        <div class="card pt-4" style={{ width: "18rem;" }}>
+                        <div class="card p-5" style={{ width: "18rem;" }}>
                           <img
                             src="./images/pic.png"
                             class="rounded-circle card-img-top img-fluid pt-4"
                             alt="..."
                           />
-                          <div class="card-body px-3">
+                          <div class="card-body px-5 pt-4">
                             <div class="card-title">
                               <h4>
                                 <User size={25} className="pb-1" /> Profile
@@ -477,13 +481,13 @@ const Homepage = () => {
                         </div>
                       </div>
                       <div className="col-md-4">
-                        <div class="card pt-4" style={{ width: "18rem;" }}>
+                        <div class="card p-5" style={{ width: "18rem;" }}>
                           <img
                             src="./images/pic.png"
                             class="rounded-circle card-img-top img-fluid pt-4"
                             alt="..."
                           />
-                          <div class="card-body">
+                          <div class="card-body px-5 pt-4">
                             <div class="card-title">
                               <h4>
                                 <User size={25} className="pb-1" /> Profile
@@ -550,7 +554,7 @@ const Homepage = () => {
                 </p>
               </div>
               <div>
-                <button className="btn btn-lg btn-blue">Contact us</button>
+                <button className="btn btn-md btn-blue">Contact us</button>
               </div>
             </div>
           </div>

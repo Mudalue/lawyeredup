@@ -34,7 +34,7 @@ const Lawyersdash = () => {
           </div>
         </div>
       </section>
-      <section className="profilecontact bgk-blue py-3">
+      <section className="profilecontact bgk-blue py-2">
         <div className="container-fluid">
           <div className="row">
             <div className="col-md-12">
@@ -57,30 +57,30 @@ const Lawyersdash = () => {
         </div>
       </section>
       <section className="profileinfo">
-        <div className="container-fluid p-5">
+        <div className="container-fluid ">
           <div className="row ">
-            <div className="col-md-3 pt-5">
-              <div className="d-flex flex-column align-items-center justify-content-center">
+            <div className="col-md-3 pt-5 px-5">
+              <div className="d-flex flex-column align-items-start justify-content-start lh-lg">
                 <h5 className="fw-bold">Work History</h5>
-                <p>
-                  <span>Address: </span>Ibadan, Nigeria
+                <p className="text-muted">
+                  <span className="fw-bold">Address: </span>Ibadan, Nigeria
                 </p>
-                <p>
-                  <span>Email: </span>John@mail.com
+                <p className="text-muted">
+                  <span className="fw-bold ">Email: </span>John@mail.com
                 </p>
                 <h5 className="fw-bold">Educational Info</h5>
-                <p>
-                  <span>Degree: </span> Mba, Lagos, Nigeria
+                <p className="text-muted">
+                  <span className="fw-bold ">Degree: </span> Mba, Lagos, Nigeria
                 </p>
-                <p>
-                  <span>School: </span>University of Ibadan
+                <p className="text-muted">
+                  <span className="fw-bold ">School: </span>University of Ibadan
                 </p>
-                <p>
-                  <span>Certification: </span>Lord of Law
+                <p className="text-muted">
+                  <span className="fw-bold ">Certification: </span>Lord of Law
                 </p>
                 <h5 className="fw-bold">Criminal Record</h5>
-                <p>
-                  <span> </span> None
+                <p className="text-muted">
+                  <span className="fw-bold "> </span> None
                 </p>
               </div>
             </div>
@@ -93,12 +93,12 @@ const Lawyersdash = () => {
                   <div className="row">
                     <div className="col-md-4">
                       <h6>Total Number of cases</h6>
-                      <h1 className="fw-bold">654</h1>
+                      <h1 className="fw-bold text-muted">654</h1>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="row py-4">
+              <div className="row py-2">
                 <div className="col-md-12">
                   <h5>Skill set</h5>
                 </div>
@@ -160,7 +160,7 @@ const Lawyersdash = () => {
                   <h5>Recent Activity</h5>
                 </div>
               </div>
-              <div class="list-group ">
+              <div class="list-group  lh-lg">
                 <a
                   href="#"
                   class="list-group-item list-group-item-action active bgk-blue "

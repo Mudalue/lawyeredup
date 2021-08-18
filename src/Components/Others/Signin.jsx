@@ -16,8 +16,8 @@ const Signin = () => {
       <Navbar />
       <div className="container-fluid">
         <div className="row">
-          <div className="col-md-6">
-            <div>
+          <div className="col-md-7">
+            <div className="p-5">
               <img
                 src="./images/signin.svg"
                 alt="login"
@@ -25,8 +25,8 @@ const Signin = () => {
               />
             </div>
           </div>
-          <div className="col-md-6 signin">
-            <div className="card p-5">
+          <div className="col-md-5 form">
+            <div className="card p-3">
               <div className="card-body">
                 <h1 lassName="card-title">Sign In</h1>
                 <div className="card-text">
@@ -46,7 +46,7 @@ const Signin = () => {
                     <div className="row">
                       <div className="col-md-12 py-3">
                         <div>
-                          <button className="btn btn-lg btn-success">
+                          <button className="btn btn-md btn-success">
                             Sign-up 
                           </button>
                         </div>

@@ -34,7 +34,7 @@ const Aboutus = () => {
                 </p>
               </div>
             </div>
-            <div className="col-md-4 pt-5 text-center" data-aos="fade-left">
+            <div className="col-md-4  text-center p-5" data-aos="fade-left">
               <img src="./images/About.svg" className="img-fluid" />
             </div>
           </div>
@@ -105,29 +105,29 @@ const Aboutus = () => {
           </div>
           <div className="row">
             <div className="col-md-4" data-aos="zoom-in">
-              <div>
+              <div className="p-5">
                 <img
                   src="./images/Contact.png"
                   class="rounded-circle card-img-top img-fluid p-5"
                   alt="..."
                 />
                 <h6 className="text-center">Abiodun Mayowa</h6>
-                <p class="fst-italic text-center">Senior Software Developer</p>
+                <p class="fst-italic text-center">co-founder</p>
               </div>
             </div>
             <div className="col-md-4" data-aos="zoom-in">
-              <div>
+              <div className="p-5">
                 <img
                   src="./images/Contact.png"
                   class="rounded-circle card-img-top img-fluid p-5"
                   alt="..."
                 />
                 <h6 className="text-center">Mudalue Emeka</h6>
-                <p class="fst-italic text-center">Junior Software Developer</p>
+                <p class="fst-italic text-center">co-founder</p>
               </div>
             </div>
             <div className="col-md-4" data-aos="zoom-in">
-              <div>
+              <div className="p-5">
                 <img
                   src="./images/Contact.png"
                   class="rounded-circle card-img-top img-fluid p-5"

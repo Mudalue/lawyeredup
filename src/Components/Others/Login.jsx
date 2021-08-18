@@ -17,20 +17,20 @@ const Login = () => {
       <div className="container-fluid">
         <div className="row">
           <div className="col-md-7">
-            <div>
+            <div className="p-5">
               <img
                 src="./images/login.svg"
                 alt="login"
-                className="img-fluid p-5"
+                className="img-fluid"
               />
             </div>
           </div>
           <div className="col-md-5 form">
-            <div className="card p-5">
+            <div className="card p-2">
               <div className="card-body">
-                <h1 lassName="card-title">Login</h1>
+                <h1 lassName="card-titl">Login</h1>
                 <div className="card-text">
-                  <form action="" className="p-5">
+                  <form action="" className="p-3">
                     <div className="row">
                       <div className="col-md-12 pt-3">
                         <label>Enter Username</label>
@@ -46,7 +46,7 @@ const Login = () => {
                     <div className="row">
                       <div className="col-md-12 py-3">
                         <div>
-                          <button className="btn btn-lg btn-success">
+                          <button className="btn btn-md btn-success">
                             Login now
                           </button>
                         </div>

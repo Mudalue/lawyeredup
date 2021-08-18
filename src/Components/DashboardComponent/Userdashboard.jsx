@@ -16,7 +16,7 @@ const Userdashboard = () => {
     <div>
       <UserNavbar />
 
-      <section>
+      <section className="userDashboard">
         <div className="container-fluid">
           <div className="row">
             <div className="col-md-12 pt-5">
@@ -33,35 +33,35 @@ const Userdashboard = () => {
                         <div>
                           <p
                             className="fw-bold  text-center"
-                            style={{ fontSize: "35px" }}
+                            style={{ fontSize: "20px" }}
                           >
                             John doe
                           </p>
                         </div>
                       </div>
                       <div className="d-flex flex-wrap align-content-center justify-content-between px-4 pt-5">
-                        <p style={{ fontSize: "18px" }}>
-                          <Bell  size={20}/> Notification
+                        <p style={{ fontSize: "12px" }}>
+                          <Bell  size={15}/> Notification
                         </p>
                         <p>
                           <span className="badge bg-danger">8 views</span>
                         </p>
                       </div>
                       <div className="d-flex flex-wrap align-content-center justify-content-between px-4 pt-2">
-                        <p style={{ fontSize: "18px" }}>
-                          <Mail   size={20}/> Messages
+                        <p style={{ fontSize: "12px" }}>
+                          <Mail   size={15}/> Messages
                         </p>
                         <p>
                           <span className="badge bg-danger">1 new message</span>
                         </p>
                       </div>
                       <div className="d-flex flex-wrap align-content-center justify-content-between px-4 py-3">
-                        <p style={{ fontSize: "18px" }}>
-                          <Edit2  size={18} /> Edit Profile
+                        <p style={{ fontSize: "12px" }}>
+                          <Edit2  size={15} /> Edit Profile
                         </p>
                       </div>
-                      <a className="bg-danger text-center text-light">
-                        <button className="btn btn-lg text-sm text-light p-4 fw-bold"><PlusCircle/>{" "} Create your case</button>
+                    <a className="bg-danger text-center text-light" style={{fontSize:"12px"}}>
+                        <button className="btn btn-lg text-sm text-light p-4"><PlusCircle size={40}/>{" "} create  case</button>
                       </a>
                     </div>
                   </div>
@@ -120,14 +120,14 @@ const Userdashboard = () => {
                         <ul class="list-group">
                           <li class="list-group-item d-flex justify-content-between align-items-start">
                             <div class="ms-2 me-auto py-3">
-                              <div class="fw-bold"> Posted a divorce case</div>
+                              <div class="fw-bold" ><h6 style={{fontSize: "14px"}}>Posted a divorce case</h6> </div>
                             </div>
                             <p class="text-muted pt-2">3 days ago</p>
                           </li>
                           <li class="list-group-item d-flex justify-content-between align-items-start">
                             <div class="ms-2 me-auto">
                               <div class="fw-bold py-3">
-                                8 lawyers reviewed divorce case
+                                <h6 style={{fontSize: "14px"}}>8 lawyers reviewed divorce case</h6>
                               </div>
                             </div>
                             <p class="text-muted pt-2">2 days ago</p>
@@ -135,20 +135,20 @@ const Userdashboard = () => {
                           <li class="list-group-item d-flex justify-content-between align-items-start">
                             <div class="ms-2 me-auto">
                               <div class="fw-bold py-3">
-                                Barrister David takes divorce case
+                               <h6 style={{fontSize: "14px"}}>Barrister David takes divorce case</h6> 
                               </div>
                             </div>
                             <p class="text-muted pt-2">Yesterday</p>
                           </li>
                           <div className=" d-flex justify-content-end align-items-end py-4">
-                            <button className="btn btn-success rounded-pill">
+                            <button className="btn btn-md btn-success rounded-pill">
                               see more
                             </button>
                           </div>
                         </ul>
                       </div>
                       <div className="col-md-4">
-                        <ul class="list-group">
+                        <ul class="list-group"style={{fontSize: "14px"}}>
                           <li class="list-group-item">About</li>
                           <li class="list-group-item">Date joined: 3years</li>
                           <li class="list-group-item">
