@@ -1,8 +1,28 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { PlusCircle } from "react-feather";
 import UserNavbar from "../DashboardComponent/UserDashboard/UserNavbar";
+import HttpServices from "./../../Util/HttpServices";
 
-const caseForm = () => {
+const CaseForm = () => {
+  const [title, setTitle] = useState("");
+  const [category, setCategory] = useState("");
+  const [_case, setCase] = useState("");
+
+  useEffect(() => {
+    (async () => {
+      const HTTP = new HttpServices("http://localhost:8084/api/v1/users/check");
+      let call = await HTTP.get();
+      console.log(call);
+    })();
+  }, []);
+
+  const saveCase = async (e) => {
+    e.preventDefault();
+    const HTTP = new HttpServices("http://localhost:8084/api/v1/cases/newcase");
+    let call = await HTTP.post({ title, category, details: _case });
+    console.log(call);
+  };
+
   return (
     <div>
       <UserNavbar />
@@ -25,13 +45,17 @@ const caseForm = () => {
                     <h4>Create your case</h4>
                   </div>
                   <div className="card-text">
-                    <form className="p-5">
+                    <form className="p-5" onSubmit={saveCase}>
                       <div className="row">
                         <div className="col-md-12 py-4">
                           <label>Category</label>
                           <select
                             class="form-select"
                             aria-label="Default select example"
+                            onChange={({ target: { value } }) =>
+                              setCategory(value)
+                            }
+                            defaultValue={category}
                           >
                             <option selected>--Select category--</option>
                             <option value="1">Divorce</option>
@@ -46,6 +70,10 @@ const caseForm = () => {
                           <input
                             className="form-control"
                             placeholder="Enter Case title"
+                            onChange={({ target: { value } }) =>
+                              setTitle(value)
+                            }
+                            defaultValue={title}
                           />
                         </div>
                       </div>
@@ -56,6 +84,8 @@ const caseForm = () => {
                             className="form-control"
                             placeholder="Write your case"
                             rows="4"
+                            onChange={({ target: { value } }) => setCase(value)}
+                            defaultValue={_case}
                           />
                         </div>
                       </div>
@@ -91,4 +121,4 @@ const caseForm = () => {
   );
 };
 
-export default caseForm;
+export default CaseForm;

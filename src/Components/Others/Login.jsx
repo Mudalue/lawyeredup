@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "./Navbar";
 import {
   Facebook,
@@ -9,8 +9,19 @@ import {
   Twitch,
 } from "react-feather";
 import Footer from "./Footer";
+import HttpServices from "./../../Util/HttpServices";
 
 const Login = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const submitLogin = async (e) => {
+    e.preventDefault();
+    const res_ = new HttpServices("http://localhost:8084/api/v1/users/login");
+    let result = await res_.post({ email, password });
+
+    console.log(result);
+  };
+
   return (
     <div>
       <Navbar />
@@ -30,17 +41,28 @@ const Login = () => {
               <div className="card-body">
                 <h1 lassName="card-title">Login</h1>
                 <div className="card-text">
-                  <form action="" className="p-5">
+                  <form action="" className="p-5" onSubmit={submitLogin}>
                     <div className="row">
                       <div className="col-md-12 pt-3">
-                        <label>Enter Username</label>
-                        <input className="form-control" />
+                        <label>Enter Email</label>
+                        <input
+                          className="form-control"
+                          defaultValue={email}
+                          onChange={({ target: { value } }) => setEmail(value)}
+                        />
                       </div>
                     </div>
                     <div className="row">
                       <div className="col-md-12 pt-3">
                         <label>Enter Password</label>
-                        <input className="form-control" />
+                        <input
+                          type="password"
+                          className="form-control"
+                          defaultValue={password}
+                          onChange={({ target: { value } }) =>
+                            setPassword(value)
+                          }
+                        />
                       </div>
                     </div>
                     <div className="row">

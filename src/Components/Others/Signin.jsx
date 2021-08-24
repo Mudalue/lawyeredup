@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import Navbar from "./Navbar";
 import {
   Facebook,
@@ -11,6 +11,13 @@ import {
 import Footer from "./Footer";
 
 const Signin = () => {
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState("");
+  const [fullName, setFullName] = useState("");
+
+  
+
   return (
     <div>
       <Navbar />
@@ -26,11 +33,11 @@ const Signin = () => {
             </div>
           </div>
           <div className="col-md-6 signin">
-            <div className="card p-5">
+            <div className="card p-1">
               <div className="card-body">
-                <h1 lassName="card-title">Sign In</h1>
+                <h1 lassName="card-title">Create Account</h1>
                 <div className="card-text">
-                  <form action="" className="p-5">
+                  <form action="" className="p-2">
                     <div className="row">
                       <div className="col-md-12 pt-3">
                         <label>Enter Username</label>
@@ -44,10 +51,16 @@ const Signin = () => {
                       </div>
                     </div>
                     <div className="row">
+                      <div className="col-md-12 pt-3">
+                        <label>Repeat Password</label>
+                        <input className="form-control" />
+                      </div>
+                    </div>
+                    <div className="row">
                       <div className="col-md-12 py-3">
                         <div>
                           <button className="btn btn-lg btn-success">
-                            Sign-up 
+                            Sign Up 
                           </button>
                         </div>
                       </div>
