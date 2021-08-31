@@ -53,6 +53,7 @@ body {
 .headertext span{
   font-weight: 800;
 }
+
 .howeop {
   padding:  150px 0 50px 0!important;
 }
@@ -79,9 +80,9 @@ body {
   padding: 250px 0  0 150px!important
 }
 .homeimg{
-  padding: 50px 0  0 150px!important;
-  width: "70%";
-   height: "70%";
+  padding: 100px 0  0 100px!important;
+  width: 90%;
+   height: 90%;
 }
 .headertext h1{
   font-size: 3rem;
@@ -217,32 +218,114 @@ h5 {
 and (max-device-width: 480px)
 and (orientation: portrait) {
 .home{
-  height: 70vh;
+  height: auto;
 }
  .headertext{
-  padding: 50px 0  0 50px!important
-  
+  padding: 100px 0  0 70px!important
 }
 .headertext img{
   display: none!important;
 }
 .headertext h1{
-  font-size: 30px;
-  font-weight: 400;
+  font-size: 18px;
+  font-weight: 600;
 }
 .homeimg{
-  display: none!important;
+  padding: 50px 0  0 30px!important;
+  width: 80%;
+   height: 80%;
+}
+.howeop img, .abouteam img{
+  width: 90%;
+  height: 90%;
+  padding-left: 25px;
+}
+.steps img{
+  height: 100%;
+  width: 100%;
+}
+.accessibility {
+  padding: 10px 0 100px 0;
+  margin: top 100px !important;;
+}
+.accessibility img{
+  width: 90%;
+  height: 90%;
+  padding-left: 50px;
+}
+.lawyersection img{
+  width: 80%;
+  height: 80%;
+  padding-left: 55px;
+}
+.contact{
+  padding-bottom: 100px;
+}
+.contact img{
+   width: 90%;
+   height: 90%;
+   padding-left: 55px;
+}
+.b4footer{
+  line-height: 30px;
+}
+.form{
+  padding: 10px 0 50px 0px!important;
+  border: none!important;
+}
+.form h1{
+  font-size: 18px;
+   text-align: center;
+}
+.form label{
+  font-size: 12px;
+}
+.form form button{
+  font-size: 18px;
+}
+/* <about> */
+.aboutheader{
+  height: auto;
+}
+.aboutheader h1 {
+  font-size: 2rem;
+  font-weight: 500;
+}.createcase{
+  height:auto;
+  background-color:#6c63ff;
+}
+
+.createcase img{
+ padding: 100px 0 0 0!important;
+ width: 80%;
+ height: 80%;
+}
+.createcase .col-md-5{
+  padding: 90px 0px 0px 0!important;
+}
+.caseinfo button{
+  width: 100%!important;
+}
+.caseinfo{
+  padding: 50px 0 0 0!important;
+}
+.lawyerProfile{
+  font-weight: 600!important;
+  font-size: 1.5rem!important;
 }
 }
 /* <UserDashboard> */
 .userDashboard h4{
 font-size: 18px;
+font-weight: 600;
 }
 .userDashboard p{
   font-size: 12px;
+  font-weight: 500;
 }
 .userdashboard h1{
   font-size: 25px;
+  font-weight: 600;
 }
 .userdashboard ul{
   font-size: 12px;
@@ -344,15 +427,15 @@ height: 100%;
 
 .profileinfo p{
   font-weight: 400;
-  font-size: large;
+  font-size: 14px;
 }
 .profileinfo h5{
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 14px;
 }
 .profileinfo h6{
   font-weight: 500;
-  font-size: 1.2rem;
+  font-size: 14px;
 }
 .profileinfo h1{
   font-size: 4rem;
@@ -412,18 +495,20 @@ height: 100%;
 }
 /* <create case> */
 .createcase{
-  height: auto;
+  height:auto;
   background-color:#6c63ff;
 }
 .createcase h4{
   font-weight: 600;
-  font-size: xx-large;
+  font-size: 18px;
 }
 .createcase img{
- padding: 120px 0 100px 150px
+ padding: 200px 0 0px 150px;
+ width: 80%;
+ height: 80%;
 }
 .createcase .col-md-5{
-  padding: 120px 60px 100px 0;
+  padding: 90px 60px 0px 0;
 }
 .createcase form label{
   font-weight: 600;
@@ -431,11 +516,11 @@ height: 100%;
   padding-bottom: 5px;
 }
 .createcase form input{
-  height: 55px;
+  height: 45px;
 }
 .createcase form button{
   font-weight: 500;
-  font-size: x-large;
+  font-size: 16px;
 }
 .profileinfo h5{
   font-size: 17px;

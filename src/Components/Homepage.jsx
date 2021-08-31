@@ -34,26 +34,20 @@ const Homepage = () => {
                 <h1 className="text-light">
                   Welcome to <span className="text-dark fw-bold">LawyedUp</span>
                 </h1>
-                <p className="text-light">
-                  Your connection to justice
-                </p>
+                <p className="text-light">Your connection to justice</p>
 
                 <div className="div">
-                    <a href="/Signin">
-                      <button className="btn bg-light btn-md px-4 py-2 fw-boulder text-dark">
-                        Get started
-                      </button>
-                    </a>
-                  </div>
+                  <a href="/Signin">
+                    <button className="btn bg-light btn-md px-4 py-2 fw-boulder text-dark">
+                      Get started
+                    </button>
+                  </a>
+                </div>
               </div>
-
             </div>
             <div className="col-md-6">
               <div className="pt-5 homeimg">
-                <img
-                  src="images/judge.svg"
-                  class="img-fluid"
-                />
+                <img src="images/judge.svg" class="img-fluid" />
               </div>
             </div>
             {/* <div className="col-md-5 p-4"></div> */}
@@ -93,9 +87,9 @@ const Homepage = () => {
                 data-aos="fade-up-right"
               />
             </div>
-            <div className="col-md-6 px-4 text-light ">
+            <div className="col-md-6  text-light ">
               <div
-                className="d-flex flex-column align-items-start justify-content-start p-5"
+                className="d-flex flex-column align-items-start justify-content-start "
                 data-aos="fade-left"
               >
                 <div>
@@ -159,7 +153,7 @@ const Homepage = () => {
             </div>
           </div>
           <div className="row mt-3">
-            <div className="col-md-4 " data-aos="zoom-in">
+            <div className="col-md-4  col-sm-12 pb-3" data-aos="zoom-in">
               <div className="card">
                 <div className="card-body">
                   <div className="card-title">
@@ -180,7 +174,7 @@ const Homepage = () => {
                 </div>
               </div>
             </div>
-            <div className="col-md-4 " data-aos="zoom-in">
+            <div className="col-md-4 pb-3" data-aos="zoom-in">
               <div className="card">
                 <div className="card-body">
                   <div className="card-title">
@@ -201,7 +195,7 @@ const Homepage = () => {
                 </div>
               </div>
             </div>
-            <div className="col-md-4" data-aos="zoom-in">
+            <div className="col-md-4 pb-3" data-aos="zoom-in">
               <div className="card">
                 <div className="card-body">
                   <div className="card-title">
@@ -224,7 +218,7 @@ const Homepage = () => {
             </div>
           </div>
           <div className="row mt-3" data-aos="zoom-in">
-            <div className="col-md-4">
+            <div className="col-md-4 pb-3">
               <div className="card">
                 <div className="card-body">
                   <div className="card-title">
@@ -245,7 +239,7 @@ const Homepage = () => {
                 </div>
               </div>
             </div>
-            <div className="col-md-4 " data-aos="zoom-in">
+            <div className="col-md-4 pb-3" data-aos="zoom-in">
               <div className="card">
                 <div className="card-body">
                   <div className="card-title">
@@ -266,7 +260,7 @@ const Homepage = () => {
                 </div>
               </div>
             </div>
-            <div className="col-md-4" data-aos="zoom-in">
+            <div className="col-md-4 pb-3" data-aos="zoom-in">
               <div className="card">
                 <div className="card-body">
                   <div className="card-title">
@@ -355,7 +349,7 @@ const Homepage = () => {
                               </p>
                             </div>
                             <a href="#" class="btn bgk-blue text-light">
-                            contact
+                              contact
                             </a>
                           </div>
                         </div>
@@ -420,7 +414,7 @@ const Homepage = () => {
                       </div>
                     </div>
                   </div>
-                  <div class="carousel-item">
+                  {/* <div class="carousel-item">
                     <div className="row">
                       <div className="col-md-4">
                         <div class="card p-5" style={{ width: "18rem;" }}>
@@ -510,14 +504,14 @@ const Homepage = () => {
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section className="mt-5 accessibility">
+      <section className="mt-3 accessibility">
         <div className="container">
           <div className="row">
             <div className="col-md-6 " data-aos="fade-right">
@@ -590,32 +584,40 @@ const Homepage = () => {
           <span class="visually-hidden">Next</span>
         </button>
       </div> */}
-      <section class="d-flex justify-content-between p-4 bgk-blue">
-        <div class="me-5">
-          <span className="text-white">
-            Get connected with us on social networks:
-          </span>
-        </div>
+      <section class="d-flex justify-content-between p-4 bgk-blue b4footer">
+        <div className="container-fluid">
+          <div className="row">
+            <div className="col-md-12">
+              <div className="d-flex flex-wrap justify-content-between">
+                <div class="me-5">
+                  <span className="text-white">
+                    Get connected with us on social networks:
+                  </span>
+                </div>
 
-        <div>
-          <a href="" class="text-white me-4">
-            <Facebook />
-          </a>
-          <a href="" class="text-white me-4">
-            <Twitter />
-          </a>
-          <a href="" class="text-white me-4">
-            <Twitch />
-          </a>
-          <a href="" class="text-white me-4">
-            <Instagram />
-          </a>
-          <a href="" class="text-white me-4">
-            <Linkedin />
-          </a>
-          <a href="" class="text-white me-4">
-            <GitHub />
-          </a>
+                <div>
+                  <a href="" class="text-white me-4">
+                    <Facebook />
+                  </a>
+                  <a href="" class="text-white me-4">
+                    <Twitter />
+                  </a>
+                  <a href="" class="text-white me-4">
+                    <Twitch />
+                  </a>
+                  <a href="" class="text-white me-4">
+                    <Instagram />
+                  </a>
+                  <a href="" class="text-white me-4">
+                    <Linkedin />
+                  </a>
+                  <a href="" class="text-white me-4">
+                    <GitHub />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <section></section>

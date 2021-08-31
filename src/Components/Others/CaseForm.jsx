@@ -21,11 +21,11 @@ const caseForm = () => {
             <div className="col-md-5">
               <div className="card">
                 <div className="card-body">
-                  <div className="card-title pt-5 text-center">
+                  <div className="card-title pt-3 text-center">
                     <h4>Create your case</h4>
                   </div>
                   <div className="card-text">
-                    <form className="p-5">
+                    <form className="p-3">
                       <div className="row">
                         <div className="col-md-12 py-4">
                           <label>Category</label>
@@ -41,7 +41,7 @@ const caseForm = () => {
                         </div>
                       </div>
                       <div className="row">
-                        <div className="col-md-12 pb-4">
+                        <div className="col-md-12 pb-3">
                           <label>Title</label>
                           <input
                             className="form-control"
@@ -50,7 +50,7 @@ const caseForm = () => {
                         </div>
                       </div>
                       <div className="row">
-                        <div className="col-md-12 pb-4">
+                        <div className="col-md-12 pb-3">
                           <label>Case information</label>
                           <textarea
                             className="form-control"
@@ -60,7 +60,7 @@ const caseForm = () => {
                         </div>
                       </div>
                       <div className="row">
-                        <div className="col-md-12 pb-4">
+                        <div className="col-md-12 pb-3">
                           <label>Questions</label>
                           <input
                             className="form-control"
@@ -69,9 +69,9 @@ const caseForm = () => {
                         </div>
                       </div>
                       <div className="row">
-                        <div className="col-md-12 py-4">
+                        <div className="col-md-12 py-3">
                           <button
-                            className="btn btn-successs bg-success text-light p-3 rounded-pill"
+                            className="btn btn-successs bg-success text-light py-3 rounded-pill"
                             style={{ width: "100%" }}
                           >
                             <PlusCircle />

@@ -28,7 +28,7 @@ const Login = () => {
           <div className="col-md-5 form">
             <div className="card p-2">
               <div className="card-body">
-                <h1 lassName="card-titl">Login</h1>
+                <h1 lassName="card-title">Login</h1>
                 <div className="card-text">
                   <form action="" className="p-3">
                     <div className="row">
@@ -47,7 +47,7 @@ const Login = () => {
                       <div className="col-md-12 py-3">
                         <div>
                           <button className="btn btn-md btn-success">
-                            Login now
+                            Login
                           </button>
                         </div>
                       </div>
@@ -59,32 +59,40 @@ const Login = () => {
           </div>
         </div>
       </div>
-      <section class="d-flex justify-content-between p-4 bgk-blue">
-        <div class="me-5">
-          <span className="text-white">
-            Get connected with us on social networks:
-          </span>
-        </div>
+      <section class="d-flex justify-content-between p-4 bgk-blue b4footer">
+        <div className="container-fluid">
+          <div className="row">
+            <div className="col-md-12">
+              <div className="d-flex flex-wrap justify-content-between">
+                <div class="me-5">
+                  <span className="text-white">
+                    Get connected with us on social networks:
+                  </span>
+                </div>
 
-        <div>
-          <a href="" class="text-white me-4">
-            <Facebook />
-          </a>
-          <a href="" class="text-white me-4">
-            <Twitter />
-          </a>
-          <a href="" class="text-white me-4">
-            <Twitch />
-          </a>
-          <a href="" class="text-white me-4">
-            <Instagram />
-          </a>
-          <a href="" class="text-white me-4">
-            <Linkedin />
-          </a>
-          <a href="" class="text-white me-4">
-            <GitHub />
-          </a>
+                <div>
+                  <a href="" class="text-white me-4">
+                    <Facebook />
+                  </a>
+                  <a href="" class="text-white me-4">
+                    <Twitter />
+                  </a>
+                  <a href="" class="text-white me-4">
+                    <Twitch />
+                  </a>
+                  <a href="" class="text-white me-4">
+                    <Instagram />
+                  </a>
+                  <a href="" class="text-white me-4">
+                    <Linkedin />
+                  </a>
+                  <a href="" class="text-white me-4">
+                    <GitHub />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <section></section>
