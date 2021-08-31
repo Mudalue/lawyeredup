@@ -2,7 +2,8 @@ import axios from "axios";
 
 export default class HttpServices {
   constructor(path) {
-    this.path = path;
+    this.path = "https://lawyered-up.herokuapp.com/api/v1" + path;
+    // this.path = "http://localhost:8084/api/v1" + path;
   }
 
   async post(_data) {

@@ -1,12 +1,13 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
+import logo from "./../../images/logo.png";
 const Navbar = () => {
   return (
     <>
-      <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light p-3">
+      <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="/">
-            LawyedUp
+            <img src={logo} alt="lawyeredup logo" srcset="" />
           </a>
           <button
             class="navbar-toggler"
@@ -31,18 +32,18 @@ const Navbar = () => {
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/About-us">
-                  About 
+                  About
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/Login">
+                <Link class="nav-link" to="/login">
                   Login
-                </a>
+                </Link>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/Signin">
-                  Sign Up
-                </a>
+                <Link class="nav-link" to="/joinus">
+                  Join Us
+                </Link>
               </li>
             </ul>
           </div>

@@ -16,7 +16,7 @@ const CaseInfo = () => {
       <Navbar />
       <section className="caseinfo">
         <div className="container">
-          <div className="row py-4">
+          <div className="row py-3">
             <div className="col-md-12">
               <h4 className="text-start">Case Information</h4>
               <hr />
@@ -88,7 +88,7 @@ const CaseInfo = () => {
           <div className="row pb-5">
             <div className="col-md-12 text-end">
               <button
-                className="btn btn-lg bg-success text-light fw-bold px-5 py-3"
+                className="btn btn-md bg-success text-light fw-bold px-5 py-3"
                 type="button"
                 data-bs-toggle="modal"
                 data-bs-target="#exampleModal"

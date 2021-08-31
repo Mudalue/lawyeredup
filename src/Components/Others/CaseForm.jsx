@@ -1,31 +1,34 @@
 import React, { useState, useEffect } from "react";
 import { PlusCircle } from "react-feather";
-import UserNavbar from "../DashboardComponent/UserDashboard/UserNavbar";
 import HttpServices from "./../../Util/HttpServices";
+import Navbar from "./Navbar";
 
 const CaseForm = () => {
   const [title, setTitle] = useState("");
   const [category, setCategory] = useState("");
   const [_case, setCase] = useState("");
+  const [notification, setNotification] = useState("");
 
-  useEffect(() => {
-    (async () => {
-      const HTTP = new HttpServices("http://localhost:8084/api/v1/users/check");
-      let call = await HTTP.get();
-      console.log(call);
-    })();
-  }, []);
+  // useEffect(() => {
+  //   (async () => {
+  //     const HTTP = new HttpServices("/users/check");
+  //     let call = await HTTP.get();
+  //     console.log(call);
+  //   })();
+  // }, []);
 
   const saveCase = async (e) => {
     e.preventDefault();
-    const HTTP = new HttpServices("http://localhost:8084/api/v1/cases/newcase");
+    const HTTP = new HttpServices("/cases/newcase");
     let call = await HTTP.post({ title, category, details: _case });
-    console.log(call);
+    if (call.status) setNotification("Case Posted Successfully!");
+    //redirect here! or show link!!
+    else setNotification(call.message);
   };
 
   return (
     <div>
-      <UserNavbar />
+      <Navbar />
       <section className="createcase">
         <div className="container-fluid">
           <div className="row">
@@ -99,6 +102,9 @@ const CaseForm = () => {
                         </div>
                       </div>
                       <div className="row">
+                        <div className="text-center alert alert-secondary">
+                          {notification}
+                        </div>
                         <div className="col-md-12 py-4">
                           <button
                             className="btn btn-successs bg-success text-light p-3 rounded-pill"

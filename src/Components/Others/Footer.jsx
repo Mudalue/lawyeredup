@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div class="container-fluid py-5">
       <footer
-        class="text-center text-lg-start text-white"
+        class="text-center  text-light"
         
       >
         
@@ -104,10 +104,10 @@ const Footer = () => {
         </section>
 
         <div
-          class="text-center p-3"
+          class="text-center p-3 text-sm"
         //   style="background-color: rgba(0, 0, 0, 0.2)"
         >
-          © 2021 Copyright:
+          © 2021 Copyright:{" "}
           <a class="text-white" href="LawyedUp.com">
           LawyedUp.com
           </a>

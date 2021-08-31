@@ -10,16 +10,33 @@ import {
 } from "react-feather";
 import Footer from "./Footer";
 import HttpServices from "./../../Util/HttpServices";
+import { Link } from "react-router-dom";
+import Storage from "../../Util/LocalStorage";
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [notification, setNotification] = useState("");
+
   const submitLogin = async (e) => {
     e.preventDefault();
-    const res_ = new HttpServices("http://localhost:8084/api/v1/users/login");
+    setNotification("Checking Your Credentials");
+    const res_ = new HttpServices("/users/login");
     let result = await res_.post({ email, password });
-
-    console.log(result);
+    // setNotification(result.message);
+    if (result.status)
+      !result.data.length && setNotification("Invalid Credentials!!!");
+    if (result.status) {
+      if (result.data.length) {
+        setNotification("Login Successful!");
+        let { username, firstname, lastname, email } = result.data[0];
+        // localstorage
+        const STORAGE = new Storage({ username, firstname, lastname, email });
+        STORAGE.createStorage();
+        // redirect
+        window.location = "/";
+      }
+    }
   };
 
   return (
@@ -28,26 +45,23 @@ const Login = () => {
       <div className="container-fluid">
         <div className="row">
           <div className="col-md-7">
-            <div>
-              <img
-                src="./images/login.svg"
-                alt="login"
-                className="img-fluid p-5"
-              />
+            <div className="p-5">
+              <img src="./images/login.svg" alt="login" className="img-fluid" />
             </div>
           </div>
           <div className="col-md-5 form">
-            <div className="card p-5">
+            <div className="card p-2">
               <div className="card-body">
-                <h1 lassName="card-title">Login</h1>
+                <h1 lassName="card-titl">LOGIN</h1>
                 <div className="card-text">
-                  <form action="" className="p-5" onSubmit={submitLogin}>
+                  <form action="" className="p-3" onSubmit={submitLogin}>
                     <div className="row">
                       <div className="col-md-12 pt-3">
                         <label>Enter Email</label>
                         <input
                           className="form-control"
                           defaultValue={email}
+                          required
                           onChange={({ target: { value } }) => setEmail(value)}
                         />
                       </div>
@@ -59,6 +73,7 @@ const Login = () => {
                           type="password"
                           className="form-control"
                           defaultValue={password}
+                          required
                           onChange={({ target: { value } }) =>
                             setPassword(value)
                           }
@@ -67,13 +82,16 @@ const Login = () => {
                     </div>
                     <div className="row">
                       <div className="col-md-12 py-3">
-                        <div>
-                          <button className="btn btn-lg btn-success">
-                            Login now
-                          </button>
+                        <p className="text-alert text-center">{notification}</p>
+                        <div class="d-grid gap-2 col-6 mx-auto">
+                          <button class="btn btn-primary">Login</button>
                         </div>
                       </div>
                     </div>
+                    <p className="text-center">
+                      Not Registered?{" "}
+                      <Link to="/joinus">Create Your Free Account!</Link>
+                    </p>
                   </form>
                 </div>
               </div>

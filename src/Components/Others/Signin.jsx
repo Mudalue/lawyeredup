@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import Navbar from "./Navbar";
 import {
   Facebook,
@@ -9,22 +9,53 @@ import {
   Twitch,
 } from "react-feather";
 import Footer from "./Footer";
+import HttpServices from "./../../Util/HttpServices";
+import { Link } from "react-router-dom";
 
 const Signin = () => {
   const [username, setUsername] = useState("");
+  const [firstname, setFirstname] = useState("");
+  const [lastname, setLastname] = useState("");
   const [password, setPassword] = useState("");
+  const [password2, setPassword2] = useState("");
   const [email, setEmail] = useState("");
-  const [fullName, setFullName] = useState("");
+  const [notification, setNotification] = useState("");
 
-  
+  const createAccount = async (e) => {
+    e.preventDefault();
+    if (password !== password2) {
+      setNotification("Password Mismatch!");
+      return;
+    }
+    const SERVER = new HttpServices("/users/register");
+    let Query = await SERVER.post({
+      username,
+      password,
+      email,
+      firstname,
+      lastname,
+    });
+
+    if (!Query.status) {
+      if (Query.message.code === 11000) {
+        // get the keyValue
+        let error = Object.keys(Query.message.keyValue);
+        setNotification(`${error[0]} already exists!`);
+      } else {
+        setNotification("Congratulations! Your account has been created!!");
+      }
+    }
+
+    // setNotification(Query.message.code);
+  };
 
   return (
     <div>
       <Navbar />
       <div className="container-fluid">
         <div className="row">
-          <div className="col-md-6">
-            <div>
+          <div className="col-md-7">
+            <div className="p-5">
               <img
                 src="./images/signin.svg"
                 alt="login"
@@ -32,39 +63,97 @@ const Signin = () => {
               />
             </div>
           </div>
-          <div className="col-md-6 signin">
-            <div className="card p-1">
+          <div className="col-md-5 form">
+            <div className="card p-3">
               <div className="card-body">
                 <h1 lassName="card-title">Create Account</h1>
                 <div className="card-text">
-                  <form action="" className="p-2">
+                  <form
+                    action=""
+                    className="p-2 bg-white"
+                    onSubmit={createAccount}
+                  >
                     <div className="row">
-                      <div className="col-md-12 pt-3">
+                      <div className="col-md-6 pt-3">
+                        <label>Enter FirstName :</label>
+                        <input
+                          className="form-control"
+                          onChange={({ target: { value } }) =>
+                            setFirstname(value)
+                          }
+                          value={firstname}
+                          required
+                        />
+                      </div>
+                      <div className="col-md-6 pt-3">
+                        <label>Enter LastName :</label>
+                        <input
+                          className="form-control"
+                          onChange={({ target: { value } }) =>
+                            setLastname(value)
+                          }
+                          value={lastname}
+                          required
+                        />
+                      </div>
+                    </div>
+
+                    <div className="row">
+                      <div className="col-md-6 pt-3">
                         <label>Enter Username</label>
-                        <input className="form-control" />
+                        <input
+                          className="form-control"
+                          onChange={({ target: { value } }) =>
+                            setUsername(value)
+                          }
+                          value={username}
+                          required
+                        />
+                      </div>
+                      <div className="col-md-6 pt-3">
+                        <label>Enter Email</label>
+                        <input
+                          className="form-control"
+                          onChange={({ target: { value } }) => setEmail(value)}
+                          value={email}
+                          required
+                        />
                       </div>
                     </div>
                     <div className="row">
-                      <div className="col-md-12 pt-3">
+                      <div className="col-md-6 pt-3">
                         <label>Enter Password</label>
-                        <input className="form-control" />
+                        <input
+                          type="password"
+                          className="form-control"
+                          onChange={({ target: { value } }) =>
+                            setPassword(value)
+                          }
+                          value={password}
+                          required
+                        />
                       </div>
-                    </div>
-                    <div className="row">
-                      <div className="col-md-12 pt-3">
+                      <div className="col-md-6 pt-3">
                         <label>Repeat Password</label>
-                        <input className="form-control" />
+                        <input
+                          type="password"
+                          className="form-control"
+                          onChange={({ target: { value } }) =>
+                            setPassword2(value)
+                          }
+                          value={password2}
+                          required
+                        />
                       </div>
                     </div>
-                    <div className="row">
-                      <div className="col-md-12 py-3">
-                        <div>
-                          <button className="btn btn-lg btn-success">
-                            Sign Up 
-                          </button>
-                        </div>
-                      </div>
+                    {/* !add checkbox here */}
+                    <p>{notification}</p>
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                      <button class="btn btn-primary">Create Account</button>
                     </div>
+                    <p className="text-center">
+                      Already Registed ? <Link to="/login">Login!</Link>
+                    </p>
                   </form>
                 </div>
               </div>
