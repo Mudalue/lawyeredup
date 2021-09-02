@@ -29,14 +29,15 @@ const Homepage = () => {
             data-aos-once="false"
             data-aos-anchor-placement="top-center"
           >
-            <div className="col-md-6 col-sm-6">
+            <div className="col-md-12 col-sm-6">
               <div className=" headertext">
                 <h1 className="text-light">
-                  Welcome to <span className="text-dark fw-bold">LawyedUp</span>
+                  Welcome to{" "}
+                  <span className="fw-bold txt-blue">LawyeredUp</span>
                 </h1>
                 <p className="text-light">Your connection to justice</p>
 
-                <div className="div">
+                <div>
                   <a href="/Signin">
                     <button className="btn bg-light btn-md px-4 py-2 fw-boulder text-dark">
                       Get started
@@ -45,11 +46,11 @@ const Homepage = () => {
                 </div>
               </div>
             </div>
-            <div className="col-md-6">
+            {/* <div className="col-md-6">
               <div className="pt-5 homeimg">
                 <img src="images/judge.svg" class="img-fluid" />
               </div>
-            </div>
+            </div> */}
             {/* <div className="col-md-5 p-4"></div> */}
           </div>
         </div>
@@ -80,16 +81,9 @@ const Homepage = () => {
       <section className="steps bg-dark">
         <div className="container ">
           <div className="row">
-            <div className="col-md-6 ">
-              <img
-                src="./images/task-list.svg"
-                className="img-fluid"
-                data-aos="fade-up-right"
-              />
-            </div>
-            <div className="col-md-6  text-light ">
+            <div className="col-md-6 text-light">
               <div
-                className="d-flex flex-column align-items-start justify-content-start "
+                className="lh-lg text-start stepscontent"
                 data-aos="fade-left"
               >
                 <div>
@@ -98,42 +92,48 @@ const Homepage = () => {
                 </div>
                 <div>
                   <p>
-                    <span className="txt-blue">
+                    <span className="txt-blue me-3">
                       <CheckCircle size={22} />
                     </span>{" "}
                     Create an account
                   </p>
                   <p>
-                    <span className="txt-blue">
+                    <span className="txt-blue me-3">
                       <CheckCircle size={22} />
                     </span>{" "}
                     Login
                   </p>
                   <p>
-                    <span className="txt-blue">
+                    <span className="txt-blue me-3">
                       <CheckCircle size={22} />
                     </span>{" "}
                     State your case
                   </p>
                   <p>
-                    <span className="txt-blue">
+                    <span className="txt-blue me-3">
                       <CheckCircle size={22} />
                     </span>{" "}
                     Get lawyered up
                   </p>
                   <p>
-                    <span className="txt-blue">
+                    <span className="txt-blue me-3">
                       <CheckCircle size={22} />
                     </span>{" "}
                     Payment
                   </p>
                 </div>
-                <div>
-                  <button className="btn btn-blue btn-lg">
-                    State your case
-                  </button>
+                <div className="text-centers">
+                  <button className="btn btn-blue btn-lg px-3" >Start</button>
                 </div>
               </div>
+            </div>
+            <div className="col-md-6   ">
+              <img
+                src="./images/list.svg"
+                className="img-fluid"
+                data-aos="fade-up-right"
+                style={{ width: "400px", height: "400px" }}
+              />
             </div>
           </div>
         </div>
@@ -168,7 +168,7 @@ const Homepage = () => {
                       Status: <span className="badge bg-danger">Urgent</span>
                     </p>
                     <div className="d-flex align-items-center justify-content-center">
-                      <button className="btn btn-md btn-info">see more</button>
+                      <button className="btn btn-md btn-blue">see more</button>
                     </div>
                   </div>
                 </div>
@@ -189,7 +189,7 @@ const Homepage = () => {
                       Status: <span className="badge bg-danger">Urgent</span>
                     </p>
                     <div className="d-flex align-items-center justify-content-center">
-                      <button className="btn btn-md btn-info">see more</button>
+                      <button className="btn btn-md btn-blue">see more</button>
                     </div>
                   </div>
                 </div>
@@ -210,7 +210,7 @@ const Homepage = () => {
                       Status: <span className="badge bg-warning">2 days</span>
                     </p>
                     <div className="d-flex align-items-center justify-content-center">
-                      <button className="btn btn-md btn-info">see more</button>
+                      <button className="btn btn-md btn-blue ">see more</button>
                     </div>
                   </div>
                 </div>
@@ -233,7 +233,7 @@ const Homepage = () => {
                       Status: <span className="badge bg-danger">Urgent</span>
                     </p>
                     <div className="d-flex align-items-center justify-content-center">
-                      <button className="btn btn-md btn-info">see more</button>
+                      <button className="btn btn-md btn-blue">see more</button>
                     </div>
                   </div>
                 </div>
@@ -254,7 +254,7 @@ const Homepage = () => {
                       Status: <span className="badge bg-danger">Urgent</span>
                     </p>
                     <div className="d-flex align-items-center justify-content-center">
-                      <button className="btn btn-md btn-info">see more</button>
+                      <button className="btn btn-md btn-blue">see more</button>
                     </div>
                   </div>
                 </div>
@@ -276,7 +276,7 @@ const Homepage = () => {
                       Status: <span className="badge bg-danger">Urgent</span>
                     </p>
                     <div className="d-flex align-items-center justify-content-center">
-                      <button className="btn btn-md btn-info">see more</button>
+                      <button className="btn btn-md btn-blue">see more</button>
                     </div>
                   </div>
                 </div>
@@ -286,7 +286,7 @@ const Homepage = () => {
         </div>
       </section>
 
-      <section className="lawyersection  mt-5 ">
+      <section className="lawyersection ">
         <div className="container pb-5">
           <div className="row">
             <div className="col-md-12">
@@ -300,45 +300,28 @@ const Homepage = () => {
             </div>
           </div>
           <div className="row">
-            <div className="col-md-12">
+            <div className="col-md-12 pb-3">
               <div
                 id="carouselExampleSlidesOnly"
                 class="carousel slide"
                 data-bs-ride="carousel"
               >
-                <div class="carousel-indicators">
-                  <button
-                    type="button"
-                    data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide-to="0"
-                    class="active"
-                    aria-current="true"
-                    aria-label="Slide 1"
-                  ></button>
-                  <button
-                    type="button"
-                    data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide-to="1"
-                    aria-label="Slide 2"
-                  ></button>
-                </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                     <div className="row">
-                      <div className="col-md-4">
-                        <div class="card p-5" style={{ width: "15rem;" }}>
-                          <img
-                            src="./images/pic.png"
-                            class="rounded-circle card-img-top img-fluid pt-4"
-                            alt="..."
-                          />
-                          <div class="card-body px-5 pt-4">
-                            <div class="card-title">
-                              <h4>
-                                <User size={25} className="pb-1" /> Profile
-                              </h4>
-                            </div>
-                            <div class="card-text d-flex flex-column">
+                      <div className="col-md-3 pb-3"> 
+                        <div class="card">
+                          <div className="text-center">
+                            <img
+                              src="./images/man.png"
+                              class="rounded-circle card-img-top img-fluid pt-4"
+                              alt="..."
+                              style={{ width: "50%", height: "50%" }}
+                            />
+                          </div>
+
+                          <div class="card-body pt-4 lh-lg">
+                            <div class="card-text">
                               <p>Name: john doe</p>
                               <p>Rating: 5 stars</p>
                               <p>
@@ -348,55 +331,34 @@ const Homepage = () => {
                                 </span>
                               </p>
                             </div>
-                            <a href="#" class="btn bgk-blue text-light">
+                            <a
+                              href="#"
+                              class="btn bgk-blue text-light"
+                              style={{ width: "100%" }}
+                            >
                               contact
                             </a>
                           </div>
                         </div>
                       </div>
-                      <div className="col-md-4">
-                        <div class="card p-5" style={{ width: "18rem;" }}>
-                          <img
-                            src="./images/pic.png"
-                            class="rounded-circle card-img-top img-fluid pt-4"
-                            alt="..."
-                          />
-                          <div class="card-body px-5 pt-4">
-                            <div class="card-title">
-                              <h4>
-                                <User size={25} className="pb-1" /> Profile
-                              </h4>
-                            </div>
-                            <div class="card-text d-flex flex-column">
-                              <p>Name: john doe</p>
-                              <p>Rating: 5 stars</p>
-                              <p>
-                                status:{" "}
-                                <span className="badge bg-success">
-                                  Available
-                                </span>
-                              </p>
-                            </div>
-                            <a href="#" class="btn bgk-blue text-light">
-                              Contact
-                            </a>
+                      <div className="col-md-3 pb-3">
+                        <div class="card">
+                          <div className="text-center">
+                            <img
+                              src="./images/man.png"
+                              class="rounded-circle card-img-top img-fluid pt-4"
+                              alt="..."
+                              style={{ width: "50%", height: "50%" }}
+                            />
                           </div>
-                        </div>
-                      </div>
-                      <div className="col-md-4">
-                        <div class="card p-5" style={{ width: "18rem;" }}>
-                          <img
-                            src="./images/pic.png"
-                            class="rounded-circle card-img-top img-fluid pt-4"
-                            alt="..."
-                          />
-                          <div class="card-body px-5 pt-4">
-                            <div class="card-title">
+
+                          <div class="card-body pt-4 lh-lg">
+                            {/* <div class="card-title">
                               <h4>
-                                <User size={25} className="pb-1" /> Profile
+                                <User size={25} className="p-1" /> Profile
                               </h4>
-                            </div>
-                            <div class="card-text d-flex flex-column">
+                            </div> */}
+                            <div class="card-text">
                               <p>Name: john doe</p>
                               <p>Rating: 5 stars</p>
                               <p>
@@ -406,112 +368,99 @@ const Homepage = () => {
                                 </span>
                               </p>
                             </div>
-                            <a href="#" class="btn bgk-blue text-light">
-                              Contact
+                            <a
+                              href="#"
+                              class="btn bgk-blue text-light"
+                              style={{ width: "100%" }}
+                            >
+                              contact
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-md-3 pb-3">
+                        <div class="card">
+                          <div className="text-center">
+                            <img
+                              src="./images/man.png"
+                              class="rounded-circle card-img-top img-fluid pt-4"
+                              alt="..."
+                              style={{ width: "50%", height: "50%" }}
+                            />
+                          </div>
+
+                          <div class="card-body pt-4 lh-lg">
+                            {/* <div class="card-title">
+                              <h4>
+                                <User size={25} className="p-1" /> Profile
+                              </h4>
+                            </div> */}
+                            <div class="card-text">
+                              <p>Name: john doe</p>
+                              <p>Rating: 5 stars</p>
+                              <p>
+                                status:{" "}
+                                <span className="badge bg-danger">
+                                  Unavailable
+                                </span>
+                              </p>
+                            </div>
+                            <a
+                              href="#"
+                              class="btn bgk-blue text-light"
+                              style={{ width: "100%" }}
+                            >
+                              contact
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-md-3 pb-3">
+                        <div class="card">
+                          <div className="text-center">
+                            <img
+                              src="./images/man.png"
+                              class="rounded-circle card-img-top img-fluid pt-4"
+                              alt="..."
+                              style={{ width: "50%", height: "50%" }}
+                            />
+                          </div>
+
+                          <div class="card-body pt-4 lh-lg">
+                            {/* <div class="card-title">
+                              <h4>
+                                <User size={25} className="p-1" /> Profile
+                              </h4>
+                            </div> */}
+                            <div class="card-text">
+                              <p>Name: john doe</p>
+                              <p>Rating: 5 stars</p>
+                              <p>
+                                status:{" "}
+                                <span className="badge bg-danger">
+                                  Unavailable
+                                </span>
+                              </p>
+                            </div>
+                            <a
+                              href="#"
+                              class="btn bgk-blue text-light"
+                              style={{ width: "100%" }}
+                            >
+                              contact
                             </a>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  {/* <div class="carousel-item">
-                    <div className="row">
-                      <div className="col-md-4">
-                        <div class="card p-5" style={{ width: "18rem;" }}>
-                          <img
-                            src="./images/pic.png"
-                            class="rounded-circle card-img-top img-fluid pt-4"
-                            alt="..."
-                          />
-                          <div class="card-body px-5 pt-4">
-                            <div class="card-title">
-                              <h4>
-                                <User size={25} className="pb-1" /> Profile
-                              </h4>
-                            </div>
-                            <div class="card-text d-flex flex-column">
-                              <p>Name: john doe</p>
-                              <p>Rating: 5 stars</p>
-                              <p>
-                                status:{" "}
-                                <span className="badge bg-danger">
-                                  Unavailable
-                                </span>
-                              </p>
-                            </div>
-                            <a href="#" class="btn bgk-blue text-light">
-                              Contact
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-md-4">
-                        <div class="card p-5" style={{ width: "18rem;" }}>
-                          <img
-                            src="./images/pic.png"
-                            class="rounded-circle card-img-top img-fluid pt-4"
-                            alt="..."
-                          />
-                          <div class="card-body px-5 pt-4">
-                            <div class="card-title">
-                              <h4>
-                                <User size={25} className="pb-1" /> Profile
-                              </h4>
-                            </div>
-                            <div class="card-text d-flex flex-column">
-                              <p>Name: john doe</p>
-                              <p>Rating: 5 stars</p>
-                              <p>
-                                status:{" "}
-                                <span className="badge bg-danger">
-                                  Unavailable
-                                </span>
-                              </p>
-                            </div>
-                            <a href="#" class="btn bgk-blue text-light">
-                              Contact
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-md-4">
-                        <div class="card p-5" style={{ width: "18rem;" }}>
-                          <img
-                            src="./images/pic.png"
-                            class="rounded-circle card-img-top img-fluid pt-4"
-                            alt="..."
-                          />
-                          <div class="card-body px-5 pt-4">
-                            <div class="card-title">
-                              <h4>
-                                <User size={25} className="pb-1" /> Profile
-                              </h4>
-                            </div>
-                            <div class="card-text d-flex flex-column">
-                              <p>Name: john doe</p>
-                              <p>Rating: 5 stars</p>
-                              <p>
-                                status:{" "}
-                                <span className="badge bg-danger">
-                                  Unavailable
-                                </span>
-                              </p>
-                            </div>
-                            <a href="#" class="btn bgk-blue text-light">
-                              Contact
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div> */}
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section className="mt-3 accessibility">
+      <section className="mt-3 accessibility bg-dark text-light">
         <div className="container">
           <div className="row">
             <div className="col-md-6 " data-aos="fade-right">
@@ -533,11 +482,11 @@ const Homepage = () => {
           </div>
         </div>
       </section>
-      <section className="contact">
+      <section className="contact p-4">
         <div className="container">
           <div className="row py-5">
             <div className="col-md-6 ">
-              <img src="images/call-center.svg " className="img-fluid pr-5" />
+              <img src="images/Contact.svg " className="img-fluid pr-5" />
             </div>
             <div className="col-md-6 " data-aos="fade-right">
               <div className="pt-5 lh-lg pr-5 ">
@@ -554,36 +503,6 @@ const Homepage = () => {
           </div>
         </div>
       </section>
-      {/* <div
-        id="carouselExampleControls"
-        class="carousel slide"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-inner">
-          <div class="carousel-item active"></div>
-          <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="..." />
-          </div>
-        </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleControls"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleControls"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div> */}
       <section class="d-flex justify-content-between p-4 bgk-blue b4footer">
         <div className="container-fluid">
           <div className="row">

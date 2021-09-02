@@ -14,23 +14,25 @@ const Login = () => {
   return (
     <div>
       <Navbar />
+      <section className="login">
       <div className="container-fluid">
         <div className="row">
-          <div className="col-md-7">
-            <div className="p-5">
+          <div className="col-md-6">
+            <div className="pt-5 text-center">
               <img
                 src="./images/login.svg"
                 alt="login"
                 className="img-fluid"
+                style={{width: "450px", height:"450px"}}
               />
             </div>
           </div>
-          <div className="col-md-5 form">
-            <div className="card p-2">
+          <div className="col-md-6 form">
+            <div className="card ">
               <div className="card-body">
-                <h1 lassName="card-title">Login</h1>
+                <h1 lassName="card-title" style={{fontSize:"20px"}}>Login</h1>
                 <div className="card-text">
-                  <form action="" className="p-3">
+                  <form action="" className="px-5">
                     <div className="row">
                       <div className="col-md-12 pt-3">
                         <label>Enter Username</label>
@@ -46,7 +48,7 @@ const Login = () => {
                     <div className="row">
                       <div className="col-md-12 py-3">
                         <div>
-                          <button className="btn btn-md btn-success">
+                          <button className="btn btn-md btn-success py-2" style={{width: "100%"}}>
                             Login
                           </button>
                         </div>
@@ -99,6 +101,8 @@ const Login = () => {
       <div className="footer bg-dark">
         <Footer />
       </div>
+      </section>
+     
     </div>
   );
 };

@@ -6,7 +6,7 @@ const Navbar = () => {
       <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light p-3">
         <div class="container-fluid">
           <a class="navbar-brand" href="/">
-            LawyedUp
+           <img src="./images/llogo.png" className="img-fluid" style={{width:"50px", height:"50px"}}/>
           </a>
           <button
             class="navbar-toggler"

@@ -9,14 +9,14 @@ body {
 
 /* colors */
 .bgk-blue {
-  background-color: #6c63ff !important;
+  background-color: #1FC58E !important;
 }
 .btn-blue {
   color: #fff;
-  background-color: #6c63ff !important;
+  background-color: #1FC58E !important;
 }
 .txt-blue {
-  color: #6c63ff;
+  color: #1FC58E;
 }
 .bg-grey {
   background-color: #dcdcdc;
@@ -28,7 +28,7 @@ body {
 .navbar-brand {
   font-weight: 700;
   font-size: 20px;
-  color: #6c63ff;
+  color: #1FC58E;
 }
 .navbar-nav {
   font-size: 14px;
@@ -36,7 +36,7 @@ body {
   
 }
 .nav-link active {
-  color: #6c63ff;
+  color: #1FC58E;
 }
 /* .nav-link:hover{
   background-color: #6C63FF;
@@ -47,23 +47,30 @@ body {
   bottom: 50%;
   right:50%;
 } */
+
 .home {
-  height: 80vh;
+  height: 91vh;
+  background-image: url(justice.jpg);
+  background-size: cover;
 }
 .headertext span{
   font-weight: 800;
+  font-size: 60px;
 }
 
 .howeop {
   padding:  150px 0 50px 0!important;
 }
 .steps{
-  margin: 150px 0 50px 0!important;
+  margin: 100px 0 50px 0!important;
   padding: 100px;
 }
 .steps p{
   font-size: 12px;
   font-weight: 400;
+}
+.stepscontent{
+  padding: 40px 0 10px 100px;
 }
 .steps button{
   font-weight: 400;
@@ -77,7 +84,8 @@ body {
   padding:  150px  0 100px 0;
 }
 .headertext{
-  padding: 250px 0  0 150px!important
+  padding: 250px 0  0 150px!important;
+
 }
 .homeimg{
   padding: 100px 0  0 100px!important;
@@ -85,7 +93,7 @@ body {
    height: 90%;
 }
 .headertext h1{
-  font-size: 3rem;
+  font-size: 52px;
   font-weight: 400;
 }
 .headertext p{
@@ -96,6 +104,9 @@ body {
 .lawyerProfile h1 {
   font-size: 3rem;
   font-weight: 600;
+}
+.abouteam{
+  padding-top: 100px;
 }
 .aboutheader h1 {
   font-size: 3rem;
@@ -115,6 +126,9 @@ body {
   font-size: 18px;
   word-break: break-all;
 }
+.aboutcontent{
+  padding-top: 130px;
+}
 .aboutcontent h3{
   font-size: 18px;
   font-weight: 600;
@@ -124,7 +138,8 @@ h5 {
   font-size: 16px;
 }
 .aboutheader{
-  height: 80vh;
+  height: 70vh;
+  padding-top: 120px;
 }
 .aboutheader h4 {
   font-weight: 500;
@@ -218,22 +233,47 @@ h5 {
 and (max-device-width: 480px)
 and (orientation: portrait) {
 .home{
-  height: auto;
+  height: 100%;
+  background-color: #fff!important;
+  background-image: none!important;
+}
+.headertext span{
+  font-weight: 800;
+  font-size: 50px;
 }
  .headertext{
-  padding: 100px 0  0 70px!important
+  padding: 200px 5px 100px 5px!important;
+  text-align: center!important;
+  line-height: 20px!important;
 }
 .headertext img{
   display: none!important;
 }
 .headertext h1{
-  font-size: 18px;
+  font-size: 30px;
   font-weight: 600;
+  text-align: center!important;
+  color: black!important;
+}
+.headertext p{
+  color: black!important;
+  font-size: 14px;
+  text-align: center!important;
+  padding: 5px;
+}
+.headertext  button{
+  border: 1px solid #1FC58E!important;
+  text-align: center!important;
+  background-color: transparent!important;
 }
 .homeimg{
-  padding: 50px 0  0 30px!important;
+  /* padding: 50px 0  0 30px!important;
   width: 80%;
-   height: 80%;
+   height: 80%; */
+   display: none!important;
+}
+.stepscontent{
+  padding: 0px!important;
 }
 .howeop img, .abouteam img{
   width: 90%;
@@ -241,8 +281,7 @@ and (orientation: portrait) {
   padding-left: 25px;
 }
 .steps img{
-  height: 100%;
-  width: 100%;
+display: none!important;
 }
 .accessibility {
   padding: 10px 0 100px 0;
@@ -270,7 +309,7 @@ and (orientation: portrait) {
   line-height: 30px;
 }
 .form{
-  padding: 10px 0 50px 0px!important;
+  padding: 0  0 50px 0px!important;
   border: none!important;
 }
 .form h1{
@@ -290,7 +329,18 @@ and (orientation: portrait) {
 .aboutheader h1 {
   font-size: 2rem;
   font-weight: 500;
-}.createcase{
+}
+.abouteam img{
+  width: 230px!important;
+  height: 200px!important;
+}
+.signin{
+  padding: 20px 0px 50px 0!important;
+}
+.login img, .sign img{
+  display: none!important;
+}
+.createcase{
   height:auto;
   background-color:#6c63ff;
 }
@@ -478,7 +528,7 @@ height: 100%;
   font-size: 1.5rem;
 }
 .form{
-  padding: 128px 50px 50px 0;
+  padding: 100px  40px 100px 0;
 }
 .form h1{
   font-size: 28px;
@@ -490,8 +540,8 @@ height: 100%;
 .form form button{
   font-size: 18px;
 }
-.signin{
-  padding: 100px 200px 50px 0;
+.signinform{
+  padding: 100px 20px 50px 0!important;
 }
 /* <create case> */
 .createcase{
@@ -533,4 +583,122 @@ height: 100%;
 }
 .profileinfo h1{
   font-size:  50px;
+}
+@media only screen
+and (min-device-width: 480px)
+and (orientation: portrait)  {
+  .home{
+    height:auto!important;
+    background-image: url(justice.jpg);
+    background-size: cover!important;
+  }
+   .headertext{
+    padding: 100px 50px!important
+  }
+  .headertext span{
+    font-weight: 700;
+    font-size: 40px;
+  }
+  .headertext img{
+    display: none!important;
+  }
+  .headertext h1{
+    font-size: 30px;
+    font-weight: 500;
+  }
+  .homeimg{
+    padding: 50px 0  0 30px!important;
+    width: 80%;
+     height: 80%;
+  }
+  .howeop {
+    padding:  80px 0 50px 0!important;
+  }
+  .howeop img, .abouteam img{
+    width: 90%;
+    height: 90%;
+    padding-left: 25px;
+  }
+  .stepscontent{
+    padding: 0px!important;
+  }
+  .steps img{
+    height: 100%;
+    width: 100%;
+  }
+  .casefiles{
+    padding:  80px  0 50px 0!important;
+  }
+  .accessibility {
+    padding: 10px 0 100px 0;
+    margin: top 100px !important;;
+  }
+  .accessibility img{
+    width: 90%;
+    height: 90%;
+    padding-left: 50px;
+  }
+  .lawyersection img{
+    width: 80%;
+    height: 80%;
+    padding-left: 55px;
+  }
+  .signin{
+    padding: 50px 0px 50px 0!important;
+  }
+  .contact{
+    padding-bottom: 100px;
+  }
+  .contact img{
+     width: 90%;
+     height: 90%;
+     padding-left: 55px;
+  }
+  .b4footer{
+    line-height: 30px;
+  }
+  .form, .signinform{
+    padding: 120px 50px 50px 0!important;
+    border: none!important;
+  }
+  .form h1{
+    font-size: 18px;
+     text-align: center;
+  }
+  .form label{
+    font-size: 12px;
+  }
+  .form form button{
+    font-size: 18px;
+  }
+  /* <about> */
+  .aboutheader{
+    height: auto;
+  }
+  .aboutheader h1 {
+    font-size: 2rem;
+    font-weight: 500;
+  }.createcase{
+    height:auto;
+    background-color:#6c63ff;
+  }
+  
+  .createcase img{
+   padding: 100px 0 0 0!important;
+   width: 80%;
+   height: 80%;
+  }
+  .createcase .col-md-5{
+    padding: 90px 0px 0px 0!important;
+  }
+  .caseinfo button{
+    width: 100%!important;
+  }
+  .caseinfo{
+    padding: 50px 0 0 0!important;
+  }
+  .lawyerProfile{
+    font-weight: 600!important;
+    font-size: 1.5rem!important;
+  }
 }

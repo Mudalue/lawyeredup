@@ -22,12 +22,11 @@ const Userdashboard = () => {
             <div className="col-md-12 pt-5">
               <div className="card  border-none">
                 <div className="row">
-                  <div className="col-md-3 p-5">
+                  <div className="col-md-3 me-2">
                     <div class="card">
-                      {/* <img src="..." class="card-img-top" alt="..." /> */}
                       <div class="card-body bgk-blue p-5 text-light">
                         <img
-                          src="./images/Contact.png"
+                          src="./images/man.png"
                           className="img-fluid rounded-circle p-5"
                         />
                         <div>
@@ -67,17 +66,6 @@ const Userdashboard = () => {
                   </div>
                   <div className="col-md-8 pt-5">
                     <div className="row mx-3">
-                      {/* <textarea
-                        class="form-control"
-                        id="exampleFormControlTextarea1"
-                        rows="4"
-                        placeholder="Write your case here"
-                      ></textarea>
-                      <div className="d-flex flex-wrap align-content-end justify-content-end py-4">
-                        <button className="btn btn-success">
-                          Post your Case
-                        </button>
-                      </div> */}
                     </div>
                     <div className="row mx-3">
                       <div>
@@ -86,7 +74,7 @@ const Userdashboard = () => {
                         </h4>
                       </div>
                       <div className="col-md-4 pb-3">
-                        <div className="card p-5 text-center">
+                        <div className="card p-2 text-center">
                           <div>
                             <p>Case Posted</p>
                             <h1 className="txt-blue fw-bold">30</h1>
@@ -94,7 +82,7 @@ const Userdashboard = () => {
                         </div>
                       </div>
                       <div className="col-md-4 pb-3">
-                        <div className="card p-5 text-center">
+                        <div className="card p-2 text-center">
                           <div>
                             <p>Case in Progress</p>
                             <h1 className="txt-blue fw-bold">10</h1>
@@ -102,7 +90,7 @@ const Userdashboard = () => {
                         </div>
                       </div>
                       <div className="col-md-4 pb-3">
-                        <div className="card p-5 text-center">
+                        <div className="card p-2 text-center">
                           <div>
                             <p>Case Concluded</p>
                             <h1 className="txt-blue fw-bold">10</h1>
