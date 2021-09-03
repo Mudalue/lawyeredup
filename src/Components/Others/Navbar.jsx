@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "./../../images/logo.png";
+
 const Navbar = () => {
   return (
     <>
@@ -8,7 +8,7 @@ const Navbar = () => {
         <div class="container-fluid">
           <a class="navbar-brand" href="/">
             <img
-              src={logo}
+              src="./images/llogo.png"
               className="img-fluid"
               style={{ width: "50px", height: "50px" }}
               alt=""

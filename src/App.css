@@ -76,7 +76,10 @@ body {
   margin: 100px 0 50px 0 !important;
   padding: 100px;
 }
-
+.form {
+  padding: 100px 40px 50px 0px !important;
+  border: none !important;
+}
 .steps p {
   font-size: 12px;
   font-weight: 400;
@@ -536,11 +539,6 @@ width: 100%;
     transform: rotate(-45deg);
   }
 
-  /* <lawyersection> */
-  /* .lawyerProfile img{
-width: 40%;
-height: 100%;
-} */
 
   .profileinfo p {
     font-weight: 400;
@@ -567,14 +565,6 @@ height: 100%;
     font-weight: 500;
   }
 
-  /* <Case Info> */
-  /* .caseinfo{
-  position: absolute;
-  top:0;
-  width: 100%;
-  height:100%;
-  
-} */
   .caseinfo {
     padding: 100px 0 0 0;
   }
@@ -606,7 +596,7 @@ height: 100%;
   }
 
   .form {
-    padding: 100px 40px 100px 0;
+    padding: 100px 40px 100px 0!important;
   }
 
   .form h1 {
