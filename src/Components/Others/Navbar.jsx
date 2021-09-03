@@ -7,7 +7,12 @@ const Navbar = () => {
       <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="/">
-            <img src={logo} alt="lawyeredup logo" srcset="" />
+            <img
+              src={logo}
+              className="img-fluid"
+              style={{ width: "50px", height: "50px" }}
+              alt=""
+            />
           </a>
           <button
             class="navbar-toggler"

@@ -16,10 +16,10 @@ const Aboutus = () => {
   return (
     <>
       <Navbar />
-      <section className="bg-grey py-5 lh-lg aboutheader">
-        <div className="container-fluid ">
-          <div className="row g-3 px-4">
-            <div className="col-md-8 pt-5 justify-content-center" data-aos="zoom-in">
+      <section className="bg-dark  lh-lg aboutheader text-light">
+        <div className="container">
+          <div className="row  px-4">
+            <div className="col-md-8 justify-content-center" data-aos="zoom-in">
               <div className="text-start pl-5 ">
                 <h4>Who are we....</h4>
                 <h1>People, Innovators and Creators</h1>
@@ -40,7 +40,7 @@ const Aboutus = () => {
           </div>
         </div>
       </section>
-      <section className="py-5 mt-5 lh-lg aboutcontent my-5">
+      <section className="lh-lg aboutcontent">
         <div className="container">
           <div className="row">
             <div
@@ -92,7 +92,7 @@ const Aboutus = () => {
           </div>
         </div>
       </section>
-      <section className="py-5 abouteam my-5">
+      <section className="abouteam lh-lg">
         <div className="container">
           <div className="row">
             <div className="col-md-12 text-center">
@@ -103,37 +103,40 @@ const Aboutus = () => {
               </p>
             </div>
           </div>
-          <div className="row">
+          <div className="row py-4">
             <div className="col-md-4" data-aos="zoom-in">
-              <div className="p-5">
+              <div className="text-center">
                 <img
-                  src="./images/Contact.png"
-                  class="rounded-circle card-img-top img-fluid p-5"
+                  src="./images/lele.jpeg"
+                  class="rounded-circle card-img-top img-fluid p-2"
                   alt="..."
+                  style={{width: "250px", height: "250px"}}
                 />
-                <h6 className="text-center">Abiodun Mayowa</h6>
+                <h6 className="text-center pt-3">Abiodun Mayowa</h6>
                 <p class="fst-italic text-center">co-founder</p>
               </div>
             </div>
             <div className="col-md-4" data-aos="zoom-in">
-              <div className="p-5">
+              <div className="text-center">
                 <img
-                  src="./images/Contact.png"
-                  class="rounded-circle card-img-top img-fluid p-5"
+                  src="./images/me.jpg"
+                  class="rounded-circle card-img-top img-fluid"
                   alt="..."
+                  style={{width: "250px", height: "250px"}}
                 />
-                <h6 className="text-center">Mudalue Emeka</h6>
+                <h6 className="text-center pt-3">Mudalue Emeka</h6>
                 <p class="fst-italic text-center">co-founder</p>
               </div>
             </div>
             <div className="col-md-4" data-aos="zoom-in">
-              <div className="p-5">
+              <div className="text-center">
                 <img
-                  src="./images/Contact.png"
-                  class="rounded-circle card-img-top img-fluid p-5"
+                  src="./images/man.png"
+                  class="rounded-circle card-img-top img-fluid "
                   alt="..."
+                  style={{width: "250px", height: "250px"}}
                 />
-                <h6 className="text-center">Somebody</h6>
+                <h6 className="text-center pt-3">Somebody</h6>
                 <p class="fst-italic text-center">Head of Dept</p>
               </div>
             </div>

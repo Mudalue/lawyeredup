@@ -11,16 +11,16 @@ body {
 
 /* colors */
 .bgk-blue {
-  background-color: #6c63ff !important;
+  background-color: #1FC58E !important;
 }
 
 .btn-blue {
   color: #fff;
-  background-color: #6c63ff !important;
+  background-color: #1FC58E !important;
 }
 
 .txt-blue {
-  color: #6c63ff;
+  color: #1FC58E;
 }
 
 .bg-grey {
@@ -34,7 +34,7 @@ body {
 .navbar-brand {
   font-weight: 700;
   font-size: 20px;
-  color: #6c63ff;
+  color: #1FC58E;
 }
 
 .navbar-nav {
@@ -44,7 +44,7 @@ body {
 }
 
 .nav-link active {
-  color: #6c63ff;
+  color: #1FC58E;
 }
 
 /* .nav-link:hover{
@@ -56,12 +56,16 @@ body {
   bottom: 50%;
   right:50%;
 } */
+
 .home {
-  height: 80vh;
+  height: 91vh;
+  background-image: url(justice.jpg);
+  background-size: cover;
 }
 
 .headertext span {
   font-weight: 800;
+  font-size: 60px;
 }
 
 .howeop {
@@ -69,13 +73,17 @@ body {
 }
 
 .steps {
-  margin: 150px 0 50px 0 !important;
+  margin: 100px 0 50px 0 !important;
   padding: 100px;
 }
 
 .steps p {
   font-size: 12px;
   font-weight: 400;
+}
+
+.stepscontent {
+  padding: 40px 0 10px 100px;
 }
 
 .steps button {
@@ -93,7 +101,8 @@ body {
 }
 
 .headertext {
-  padding: 250px 0 0 150px !important
+  padding: 250px 0 0 150px !important;
+
 }
 
 .homeimg {
@@ -103,7 +112,7 @@ body {
 }
 
 .headertext h1 {
-  font-size: 3rem;
+  font-size: 52px;
   font-weight: 400;
 }
 
@@ -116,6 +125,10 @@ body {
 .lawyerProfile h1 {
   font-size: 3rem;
   font-weight: 600;
+}
+
+.abouteam {
+  padding-top: 100px;
 }
 
 .aboutheader h1 {
@@ -138,6 +151,10 @@ body {
   word-break: break-all;
 }
 
+.aboutcontent {
+  padding-top: 130px;
+}
+
 .aboutcontent h3 {
   font-size: 18px;
   font-weight: 600;
@@ -149,7 +166,8 @@ h5 {
 }
 
 .aboutheader {
-  height: 80vh;
+  height: 70vh;
+  padding-top: 120px;
 }
 
 .aboutheader h4 {
@@ -260,11 +278,20 @@ h5 {
 
 @media only screen and (max-device-width: 480px) and (orientation: portrait) {
   .home {
-    height: auto;
+    height: 100%;
+    background-color: #fff !important;
+    background-image: none !important;
+  }
+
+  .headertext span {
+    font-weight: 800;
+    font-size: 50px;
   }
 
   .headertext {
-    padding: 100px 0 0 70px !important
+    padding: 200px 5px 100px 5px !important;
+    text-align: center !important;
+    line-height: 20px !important;
   }
 
   .headertext img {
@@ -272,14 +299,34 @@ h5 {
   }
 
   .headertext h1 {
-    font-size: 18px;
+    font-size: 30px;
     font-weight: 600;
+    text-align: center !important;
+    color: black !important;
+  }
+
+  .headertext p {
+    color: black !important;
+    font-size: 14px;
+    text-align: center !important;
+    padding: 5px;
+  }
+
+  .headertext button {
+    border: 1px solid #1FC58E !important;
+    text-align: center !important;
+    background-color: transparent !important;
   }
 
   .homeimg {
-    padding: 50px 0 0 30px !important;
-    width: 80%;
-    height: 80%;
+    /* padding: 50px 0  0 30px!important;
+  width: 80%;
+   height: 80%; */
+    display: none !important;
+  }
+
+  .stepscontent {
+    padding: 0px !important;
   }
 
   .howeop img,
@@ -290,14 +337,12 @@ h5 {
   }
 
   .steps img {
-    height: 100%;
-    width: 100%;
+    display: none !important;
   }
 
   .accessibility {
     padding: 10px 0 100px 0;
     margin: top 100px !important;
-    ;
   }
 
   .accessibility img {
@@ -327,7 +372,7 @@ h5 {
   }
 
   .form {
-    padding: 10px 0 50px 0px !important;
+    padding: 0 0 50px 0px !important;
     border: none !important;
   }
 
@@ -354,297 +399,431 @@ h5 {
     font-weight: 500;
   }
 
+  .abouteam img {
+    width: 230px !important;
+    height: 200px !important;
+  }
+
+  .signin {
+    padding: 20px 0px 50px 0 !important;
+  }
+
+  .login img,
+  .sign img {
+    display: none !important;
+  }
+
   .createcase {
     height: auto;
     background-color: #6c63ff;
   }
 
-  .createcase img {
-    padding: 100px 0 0 0 !important;
-    width: 80%;
-    height: 80%;
+  .userDashboard p {
+    font-size: 12px;
+    font-weight: 500;
   }
 
-  .createcase .col-md-5 {
-    padding: 90px 0px 0px 0 !important;
+  .userdashboard h1 {
+    font-size: 25px;
+    font-weight: 600;
   }
 
-  .caseinfo button {
-    width: 100% !important;
+  .userdashboard ul {
+    font-size: 12px;
   }
 
-  .caseinfo {
-    padding: 50px 0 0 0 !important;
+  /* <Navbar> */
+  .navbar img {
+    width: 15%;
+    height: 10%;
   }
 
-  .lawyerProfile {
-    font-weight: 600 !important;
-    font-size: 1.5rem !important;
+  .udashboard {
+    padding: 60px 30px 0 30px;
   }
-}
 
-/* <UserDashboard> */
-.userDashboard h4 {
-  font-size: 18px;
-  font-weight: 600;
-}
+  .udashboard .nav button {
+    padding: 15px 100px;
 
-.userDashboard p {
-  font-size: 12px;
-  font-weight: 500;
-}
+  }
 
-.userdashboard h1 {
-  font-size: 25px;
-  font-weight: 600;
-}
+  /* <Content> */
+  .udashboardheader .card {
+    height: auto;
+  }
 
-.userdashboard ul {
-  font-size: 12px;
-}
+  .udashboardcontent img {
+    width: 40%;
+    height: 40%;
+  }
 
-/* <Navbar> */
-.navbar img {
-  width: 15%;
-  height: 10%;
-}
+  .udashboardheader {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+  }
 
-.udashboard {
-  padding: 60px 30px 0 30px;
-}
+  .udashboardcontent .row {
+    padding: 140px 0px 0 0px;
+  }
 
-.udashboard .nav button {
-  padding: 15px 100px;
-
-}
-
-/* <Content> */
-.udashboardheader .card {
-  height: auto;
-}
-
-.udashboardcontent img {
-  width: 40%;
-  height: 40%;
-}
-
-.udashboardheader {
-  position: absolute;
-  z-index: -1;
-  width: 100%;
-}
-
-.udashboardcontent .row {
-  padding: 140px 0px 0 0px;
-}
-
-/* .udashboardcontent{
+  /* .udashboardcontent{
 width: 100%;
 } */
-/* <Ribbon> */
-.box {
-  position: relative;
-  height: 400px;
-  width: 100%;
-  background: #fff;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-}
+  /* <Ribbon> */
+  .box {
+    position: relative;
+    height: 400px;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
 
-.ribbon {
-  width: 150px;
-  height: 150px;
-  overflow: hidden;
-  position: absolute;
-}
+  .ribbon {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    position: absolute;
+  }
 
-.ribbon::before,
-.ribbon::after {
-  position: absolute;
-  z-index: -1;
-  content: "";
-  display: block;
-  border: 5px solid #6c63ff;
-}
+  .ribbon::before,
+  .ribbon::after {
+    position: absolute;
+    z-index: -1;
+    content: "";
+    display: block;
+    border: 5px solid #6c63ff;
+  }
 
-.ribbon span {
-  position: absolute;
-  display: block;
-  width: 225px;
-  padding: 15px 0;
-  background-color: #6c63ff;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  color: #fff;
-  font: 700 18px/1 "Lato", sans-serif;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-  text-transform: uppercase;
-  text-align: center;
-}
+  .ribbon span {
+    position: absolute;
+    display: block;
+    width: 225px;
+    padding: 15px 0;
+    background-color: #6c63ff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    font: 700 18px/1 "Lato", sans-serif;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    text-align: center;
+  }
 
-.ribbon-top-left {
-  top: -10px;
-  left: -10px;
-}
+  .ribbon-top-left {
+    top: -10px;
+    left: -10px;
+  }
 
-.ribbon-top-left::before,
-.ribbon-top-left::after {
-  border-top-color: transparent;
-  border-left-color: transparent;
-}
+  .ribbon-top-left::before,
+  .ribbon-top-left::after {
+    border-top-color: transparent;
+    border-left-color: transparent;
+  }
 
-.ribbon-top-left::before {
-  top: 0;
-  right: 0;
-}
+  .ribbon-top-left::before {
+    top: 0;
+    right: 0;
+  }
 
-.ribbon-top-left::after {
-  bottom: 0;
-  left: 0;
-}
+  .ribbon-top-left::after {
+    bottom: 0;
+    left: 0;
+  }
 
-.ribbon-top-left span {
-  right: -25px;
-  top: 30px;
-  transform: rotate(-45deg);
-}
+  .ribbon-top-left span {
+    right: -25px;
+    top: 30px;
+    transform: rotate(-45deg);
+  }
 
-/* <lawyersection> */
-/* .lawyerProfile img{
+  /* <lawyersection> */
+  /* .lawyerProfile img{
 width: 40%;
 height: 100%;
 } */
 
-.profileinfo p {
-  font-weight: 400;
-  font-size: 14px;
-}
+  .profileinfo p {
+    font-weight: 400;
+    font-size: 14px;
+  }
 
-.profileinfo h5 {
-  font-weight: 700;
-  font-size: 14px;
-}
+  .profileinfo h5 {
+    font-weight: 700;
+    font-size: 14px;
+  }
 
-.profileinfo h6 {
-  font-weight: 500;
-  font-size: 14px;
-}
+  .profileinfo h6 {
+    font-weight: 500;
+    font-size: 14px;
+  }
 
-.profileinfo h1 {
-  font-size: 4rem;
-  font-weight: 700;
-}
+  .profileinfo h1 {
+    font-size: 4rem;
+    font-weight: 700;
+  }
 
-.progress-bar {
-  font-size: 12px;
-  font-weight: 500;
-}
+  .progress-bar {
+    font-size: 12px;
+    font-weight: 500;
+  }
 
-/* <Case Info> */
-/* .caseinfo{
+  /* <Case Info> */
+  /* .caseinfo{
   position: absolute;
   top:0;
   width: 100%;
   height:100%;
   
 } */
-.caseinfo {
-  padding: 100px 0 0 0;
-}
+  .caseinfo {
+    padding: 100px 0 0 0;
+  }
 
-.caseinfo h4 {
-  font-weight: 700;
-  font-size: 18px;
-}
+  .caseinfo h4 {
+    font-weight: 700;
+    font-size: 18px;
+  }
 
-.caseinfo p {
-  font-weight: 400;
-  font-size: 12px;
-  color: gray;
-}
+  .caseinfo p {
+    font-weight: 400;
+    font-size: 12px;
+    color: gray;
+  }
 
-/* <contactsection/> */
-.contactsection {
-  padding: 100px 0
-}
+  /* <contactsection/> */
+  .contactsection {
+    padding: 100px 0
+  }
 
-.contactsection h1 {
-  font-weight: 700;
-  font-size: 5rem;
-}
+  .contactsection h1 {
+    font-weight: 700;
+    font-size: 5rem;
+  }
 
-.contactsection p {
-  font-weight: 600;
-  font-size: 1.5rem;
-}
+  .contactsection p {
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
 
-.form {
-  padding: 128px 50px 50px 0;
-}
+  .form {
+    padding: 100px 40px 100px 0;
+  }
 
-.form h1 {
-  font-size: 28px;
-  text-align: center;
-}
+  .form h1 {
+    font-size: 28px;
+    text-align: center;
+  }
 
-.form label {
-  font-size: 12px;
-}
+  .form label {
+    font-size: 12px;
+  }
 
-.form form button {
-  font-size: 18px;
-}
+  .form form button {
+    font-size: 18px;
+  }
 
-.signin {
-  padding: 100px 200px 50px 0;
-}
+  .signinform {
+    padding: 100px 20px 50px 0 !important;
+  }
 
-/* <create case> */
-.createcase {
-  height: auto;
-  background-color: #6c63ff;
-}
+  /* <create case> */
+  .createcase {
+    height: auto;
+    background-color: #6c63ff;
+  }
 
-.createcase h4 {
-  font-weight: 600;
-  font-size: 18px;
-}
+  .createcase h4 {
+    font-weight: 600;
+    font-size: 18px;
+  }
 
-.createcase img {
-  padding: 200px 0 0px 150px;
-  width: 80%;
-  height: 80%;
-}
+  .createcase img {
+    padding: 200px 0 0px 150px;
+    width: 80%;
+    height: 80%;
+  }
 
-.createcase .col-md-5 {
-  padding: 90px 60px 0px 0;
-}
+  .createcase .col-md-5 {
+    padding: 90px 60px 0px 0;
+  }
 
-.createcase form label {
-  font-weight: 600;
-  font-size: 12px;
-  padding-bottom: 5px;
-}
+  .createcase form label {
+    font-weight: 600;
+    font-size: 12px;
+    padding-bottom: 5px;
+  }
 
-.createcase form input {
-  height: 45px;
-}
+  .createcase form input {
+    height: 45px;
+  }
 
-.createcase form button {
-  font-weight: 500;
-  font-size: 16px;
-}
+  .createcase form button {
+    font-weight: 500;
+    font-size: 16px;
+  }
 
-.profileinfo h5 {
-  font-size: 17px;
-}
+  .profileinfo h5 {
+    font-size: 17px;
+  }
 
-.profileinfo p {
-  font-size: 13px;
-}
+  .profileinfo p {
+    font-size: 13px;
+  }
 
-.profileinfo h6 {
-  font-size: 12px;
-}
+  .profileinfo h6 {
+    font-size: 12px;
+  }
 
-.profileinfo h1 {
-  font-size: 50px;
+  .profileinfo h1 {
+    font-size: 50px;
+  }
+
+  @media only screen and (min-device-width: 480px) and (orientation: portrait) {
+    .home {
+      height: auto !important;
+      background-image: url(justice.jpg);
+      background-size: cover !important;
+    }
+
+    .headertext {
+      padding: 100px 50px !important
+    }
+
+    .headertext span {
+      font-weight: 700;
+      font-size: 40px;
+    }
+
+    .headertext img {
+      display: none !important;
+    }
+
+    .headertext h1 {
+      font-size: 30px;
+      font-weight: 500;
+    }
+
+    .homeimg {
+      padding: 50px 0 0 30px !important;
+      width: 80%;
+      height: 80%;
+    }
+
+    .howeop {
+      padding: 80px 0 50px 0 !important;
+    }
+
+    .howeop img,
+    .abouteam img {
+      width: 90%;
+      height: 90%;
+      padding-left: 25px;
+    }
+
+    .stepscontent {
+      padding: 0px !important;
+    }
+
+    .steps img {
+      height: 100%;
+      width: 100%;
+    }
+
+    .casefiles {
+      padding: 80px 0 50px 0 !important;
+    }
+
+    .accessibility {
+      padding: 10px 0 100px 0;
+      margin: top 100px !important;
+    }
+
+    .accessibility img {
+      width: 90%;
+      height: 90%;
+      padding-left: 50px;
+    }
+
+    .lawyersection img {
+      width: 80%;
+      height: 80%;
+      padding-left: 55px;
+    }
+
+    .signin {
+      padding: 50px 0px 50px 0 !important;
+    }
+
+    .contact {
+      padding-bottom: 100px;
+    }
+
+    .contact img {
+      width: 90%;
+      height: 90%;
+      padding-left: 55px;
+    }
+
+    .b4footer {
+      line-height: 30px;
+    }
+
+    .form,
+    .signinform {
+      padding: 120px 50px 50px 0 !important;
+      border: none !important;
+    }
+
+    .form h1 {
+      font-size: 18px;
+      text-align: center;
+    }
+
+    .form label {
+      font-size: 12px;
+    }
+
+    .form form button {
+      font-size: 18px;
+    }
+
+    /* <about> */
+    .aboutheader {
+      height: auto;
+    }
+
+    .aboutheader h1 {
+      font-size: 2rem;
+      font-weight: 500;
+    }
+
+    .createcase {
+      height: auto;
+      background-color: #6c63ff;
+    }
+
+    .createcase img {
+      padding: 100px 0 0 0 !important;
+      width: 80%;
+      height: 80%;
+    }
+
+    .createcase .col-md-5 {
+      padding: 90px 0px 0px 0 !important;
+    }
+
+    .caseinfo button {
+      width: 100% !important;
+    }
+
+    .caseinfo {
+      padding: 50px 0 0 0 !important;
+    }
+
+    .lawyerProfile {
+      font-weight: 600 !important;
+      font-size: 1.5rem !important;
+    }
+  }
+
 }
