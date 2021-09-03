@@ -17,8 +17,8 @@ const Aboutus = () => {
     <>
       <Navbar />
       <section className="bg-grey py-5 lh-lg aboutheader">
-        <div className="container-fluid p-5">
-          <div className="row g-5 p-5">
+        <div className="container-fluid ">
+          <div className="row g-3 px-4">
             <div className="col-md-8 pt-5 justify-content-center" data-aos="zoom-in">
               <div className="text-start pl-5 ">
                 <h4>Who are we....</h4>
@@ -140,32 +140,40 @@ const Aboutus = () => {
           </div>
         </div>
       </section>
-      <section class="d-flex justify-content-between p-4 bgk-blue">
-        <div class="me-5">
-          <span className="text-white">
-            Get connected with us on social networks:
-          </span>
-        </div>
+      <section class="d-flex justify-content-between p-4 bgk-blue b4footer">
+        <div className="container-fluid">
+          <div className="row">
+            <div className="col-md-12">
+              <div className="d-flex flex-wrap justify-content-between">
+                <div class="me-5">
+                  <span className="text-white">
+                    Get connected with us on social networks:
+                  </span>
+                </div>
 
-        <div>
-          <a href="" class="text-white me-4">
-            <Facebook />
-          </a>
-          <a href="" class="text-white me-4">
-            <Twitter />
-          </a>
-          <a href="" class="text-white me-4">
-            <Twitch />
-          </a>
-          <a href="" class="text-white me-4">
-            <Instagram />
-          </a>
-          <a href="" class="text-white me-4">
-            <Linkedin />
-          </a>
-          <a href="" class="text-white me-4">
-            <GitHub />
-          </a>
+                <div>
+                  <a href="" class="text-white me-4">
+                    <Facebook />
+                  </a>
+                  <a href="" class="text-white me-4">
+                    <Twitter />
+                  </a>
+                  <a href="" class="text-white me-4">
+                    <Twitch />
+                  </a>
+                  <a href="" class="text-white me-4">
+                    <Instagram />
+                  </a>
+                  <a href="" class="text-white me-4">
+                    <Linkedin />
+                  </a>
+                  <a href="" class="text-white me-4">
+                    <GitHub />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <div className="footer bg-dark">

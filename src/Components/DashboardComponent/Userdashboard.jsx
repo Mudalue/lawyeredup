@@ -85,7 +85,7 @@ const Userdashboard = () => {
                           Case History <Clipboard />
                         </h4>
                       </div>
-                      <div className="col-md-4">
+                      <div className="col-md-4 pb-3">
                         <div className="card p-5 text-center">
                           <div>
                             <p>Case Posted</p>
@@ -93,7 +93,7 @@ const Userdashboard = () => {
                           </div>
                         </div>
                       </div>
-                      <div className="col-md-4">
+                      <div className="col-md-4 pb-3">
                         <div className="card p-5 text-center">
                           <div>
                             <p>Case in Progress</p>
@@ -101,7 +101,7 @@ const Userdashboard = () => {
                           </div>
                         </div>
                       </div>
-                      <div className="col-md-4">
+                      <div className="col-md-4 pb-3">
                         <div className="card p-5 text-center">
                           <div>
                             <p>Case Concluded</p>
@@ -116,15 +116,15 @@ const Userdashboard = () => {
                           Activities <Activity />
                         </h4>
                       </div>
-                      <div className="col-md-8">
+                      <div className="col-md-8 ">
                         <ul class="list-group">
-                          <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <li class="list-group-item d-flex justify-content-between align-items-start pb-3">
                             <div class="ms-2 me-auto py-3">
                               <div class="fw-bold" ><h6 style={{fontSize: "14px"}}>Posted a divorce case</h6> </div>
                             </div>
                             <p class="text-muted pt-2">3 days ago</p>
                           </li>
-                          <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <li class="list-group-item d-flex justify-content-between align-items-start pb-3">
                             <div class="ms-2 me-auto">
                               <div class="fw-bold py-3">
                                 <h6 style={{fontSize: "14px"}}>8 lawyers reviewed divorce case</h6>
@@ -132,7 +132,7 @@ const Userdashboard = () => {
                             </div>
                             <p class="text-muted pt-2">2 days ago</p>
                           </li>
-                          <li class="list-group-item d-flex justify-content-between align-items-start">
+                          <li class="list-group-item d-flex justify-content-between align-items-start pb-3">
                             <div class="ms-2 me-auto">
                               <div class="fw-bold py-3">
                                <h6 style={{fontSize: "14px"}}>Barrister David takes divorce case</h6> 
@@ -140,7 +140,7 @@ const Userdashboard = () => {
                             </div>
                             <p class="text-muted pt-2">Yesterday</p>
                           </li>
-                          <div className=" d-flex justify-content-end align-items-end py-4">
+                          <div className=" d-flex justify-content-end align-items-end py-4 pb-3">
                             <button className="btn btn-md btn-success rounded-pill">
                               see more
                             </button>
