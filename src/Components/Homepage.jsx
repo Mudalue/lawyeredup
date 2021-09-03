@@ -46,8 +46,8 @@ const Homepage = () => {
             <div className="col-md-12 col-sm-6">
               <div className=" headertext">
                 <h1 className="text-light">
-                  Welcome to{" "}
-                  <span className="fw-bold txt-blue">LawyeredUp</span>
+                  <span>Are you</span> <br />
+                  <span className="fw-bold txt-blue">LawyeredUp?</span>
                 </h1>
                 <p className="text-light">Your connection to justice</p>
 
