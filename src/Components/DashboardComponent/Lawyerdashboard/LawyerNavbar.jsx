@@ -1,13 +1,19 @@
 import { Menu } from "@material-ui/core";
 import React from "react";
 
+
 const LawyerNavbar = () => {
   return (
     <div>
       <nav class="navbar sticky-top  navbar-expand-lg  p-3 ">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            LawyedUp
+          <img
+              src="./images/llogo.png"
+              className="img-fluid"
+              style={{ width: "50px", height: "50px" }}
+              alt=""
+            />
           </a>
           {/* <a class="navbar-brand " href="#">
               <h4 className="text-center">ParkWell</h4>
@@ -29,7 +35,7 @@ const LawyerNavbar = () => {
             class="collapse navbar-collapse justify-content-end"
             id="navbarNavAltMarkup"
           >
-            <ul class="navbar-nav">
+            {/* <ul class="navbar-nav">
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
@@ -75,7 +81,7 @@ const LawyerNavbar = () => {
                   </li>
                 </ul>
               </li>
-            </ul>
+            </ul> */}
             {/* <Link to="/parking" class="navbar-brand ">
                   <a class="nav-link active text-center" aria-current="page">
                     Home

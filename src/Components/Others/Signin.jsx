@@ -55,7 +55,7 @@ const Signin = () => {
       <section className="sign">
         <div className="container-fluid">
           <div className="row">
-            <div className="col-md-6">
+            <div className="col-md-5">
               <div className="text-center pt-5">
                 <img
                   src="./images/signin.svg"
@@ -65,10 +65,10 @@ const Signin = () => {
                 />
               </div>
             </div>
-            <div className="col-md-6 signinform">
+            <div className="col-md-7 signinform lh-lg pt-5">
               <div className="card p-3">
                 <div className="card-body">
-                  <h1 lassName="card-title">Create Account</h1>
+                  <h1 lassName="card-title"  style={{ fontSize: "20px" }}>Create Account</h1>
                   <div className="card-text">
                     <form
                       action=""
@@ -152,8 +152,8 @@ const Signin = () => {
                       </div>
                       {/* !add checkbox here */}
                       <p>{notification}</p>
-                      <div class="d-grid gap-2 col-6 mx-auto">
-                        <button class="btn btn-primary">Create Account</button>
+                      <div class="d-grid gap-2 col-md-12 mx-auto">
+                        <button class="btn btn-success py-2" style={{width: "100%"}}>Create Account</button>
                       </div>
                       <p className="text-center">
                         Already Registed ? <Link to="/login">Login!</Link>

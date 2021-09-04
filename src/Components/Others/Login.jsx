@@ -42,7 +42,7 @@ const Login = () => {
   return (
     <div>
       <Navbar />
-      <section className="login">
+      <section className="login pt-5">
         <div className="container-fluid">
           <div className="row">
             <div className="col-md-6">
@@ -58,7 +58,7 @@ const Login = () => {
             <div className="col-md-6 form">
               <div className="card ">
                 <div className="card-body">
-                  <h1 lassName="card-title" style={{ fontSize: "20px" }}>
+                  <h1 lassName="card-title text-center" style={{ fontSize: "20px" }}>
                     Login
                   </h1>
                   <div className="card-text">
@@ -95,8 +95,8 @@ const Login = () => {
                           <p className="text-alert text-center">
                             {notification}
                           </p>
-                          <div class="d-grid gap-2 col-6 mx-auto">
-                            <button class="btn btn-primary">Login</button>
+                          <div class="d-grid gap-2 col-md-12 mx-auto">
+                            <button class="btn btn-success py-2" style={{width: "100%"}}>Login</button>
                           </div>
                         </div>
                       </div>
