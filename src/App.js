@@ -11,12 +11,16 @@ import Contact from "./Components/Others/Contact";
 import Login from "./Components/Others/Login";
 import Signin from "./Components/Others/Signin";
 import CaseForm from "./Components/Others/CaseForm";
+import InitialLandingDashboard from "./Components/DashboardComponent/Landing";
 
 function App() {
   return (
     <Switch>
       <Route exact path="/create-case">
         <CaseForm />
+      </Route>
+      <Route exact path="/welcome">
+        <InitialLandingDashboard />
       </Route>
       <Route exact path="/joinus">
         <Signin />
@@ -33,7 +37,7 @@ function App() {
       <Route exact path="/user-dashboard">
         <Userdashboard />
       </Route>
-      <Route exact path="/About-us">
+      <Route exact path="/about-us">
         <Aboutus />
       </Route>
       <Route exact path="/lawyer-dashboard">

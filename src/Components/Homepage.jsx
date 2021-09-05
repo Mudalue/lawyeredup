@@ -43,29 +43,46 @@ const Homepage = () => {
             data-aos-once="false"
             data-aos-anchor-placement="top-center"
           >
-            <div className="col-md-12 col-sm-6">
+            <div className="col-md-6 col-sm-6">
               <div className=" headertext">
                 <h1 className="text-light">
                   <span>Are you</span> <br />
                   <span className="fw-bold txt-blue">LawyeredUp?</span>
                 </h1>
-                <p className="text-light">Your connection to justice</p>
+                <p className="text-light">
+                  Get connected with professionals for your cases, advice or
+                  purchases. <br /> Simply fill a form and get connected.
+                </p>
 
                 <div>
                   <a href="/Signin">
                     <button className="btn bg-light btn-md px-4 py-2 fw-boulder text-dark">
-                      Get started
+                      State Your Case
                     </button>
                   </a>
                 </div>
               </div>
             </div>
-            {/* <div className="col-md-6">
-              <div className="pt-5 homeimg">
-                <img src="images/judge.svg" class="img-fluid" />
+            <div className="col-md-6">
+              <div className=" headertext">
+                <h1 className="text-light">
+                  <span>Are you a</span> <br />
+                  <span className="fw-bold txt-blue">Lawyer?</span>
+                </h1>
+                <p className="text-light">
+                  Choose from a unique set of client issues.
+                  <br />
+                </p>
+
+                <div>
+                  <a href="/Signin">
+                    <button className="btn bg-light btn-md px-4 py-2 fw-boulder text-dark">
+                      Pick Up A Case
+                    </button>
+                  </a>
+                </div>
               </div>
-            </div> */}
-            {/* <div className="col-md-5 p-4"></div> */}
+            </div>
           </div>
         </div>
       </section>

@@ -34,7 +34,7 @@ const Login = () => {
         const STORAGE = new Storage({ username, firstname, lastname, email });
         STORAGE.createStorage();
         // redirect
-        window.location = "/";
+        window.location = "/welcome";
       }
     }
   };
@@ -58,7 +58,10 @@ const Login = () => {
             <div className="col-md-6 form">
               <div className="card ">
                 <div className="card-body">
-                  <h1 lassName="card-title text-center" style={{ fontSize: "20px" }}>
+                  <h1
+                    lassName="card-title text-center"
+                    style={{ fontSize: "20px" }}
+                  >
                     Login
                   </h1>
                   <div className="card-text">
@@ -96,7 +99,12 @@ const Login = () => {
                             {notification}
                           </p>
                           <div class="d-grid gap-2 col-md-12 mx-auto">
-                            <button class="btn btn-success py-2" style={{width: "100%"}}>Login</button>
+                            <button
+                              class="btn btn-success py-2"
+                              style={{ width: "100%" }}
+                            >
+                              Login
+                            </button>
                           </div>
                         </div>
                       </div>

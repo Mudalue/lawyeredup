@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 
+/* font-family: 'Abril Fatface', cursive; */
+/* font-family: 'Archivo Black', sans-serif; */
 * {
   margin: 0;
 }
@@ -7,6 +11,112 @@
 body {
   font-family: 'Poppins', sans-serif;
 
+}
+
+/* custom nav bar */
+.top_nav_bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  height: 70px;
+  background-color: #1fc58e;
+}
+
+.top_nav_bar .nav_links {
+  display: flex;
+  list-style: none;
+}
+
+.top_nav_bar .nav_links li {
+  margin: 15px 10px 0px;
+}
+
+.top_nav_bar .nav_links li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.big_btn {
+  background-color: #fff;
+  color: #000 !important;
+  border-radius: 6px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.menu_toggle {
+  cursor: pointer;
+  color: #fff;
+  display: none;
+}
+
+.sidebar {
+  display: none;
+}
+
+
+
+@media screen and (max-width: 30em) {
+  .top_nav_bar .nav_links {
+    display: none;
+  }
+
+  .sidebar {
+    display: block;
+    position: fixed;
+    width: 70%;
+    height: 100%;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+    background-color: #000000b3;
+    padding: 40px 10px;
+    z-index: 100;
+  }
+
+  .sidebar.active {
+    width: 0%;
+    display: none;
+  }
+
+  .menu_toggle {
+    cursor: pointer;
+    color: #fff;
+    display: block;
+  }
+
+  .sidebar ul {
+    list-style: none;
+    margin-bottom: 46px;
+  }
+
+  .sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+
+  .sidebar ul li a:hover {
+    color: #1FC58E
+  }
+
+  .fix_bottom {
+    margin-top: 100%;
+  }
+
+  .fix_bottom li a {
+    background-color: #1fc58e;
+    padding: 10px 10px;
+    margin: 20px 0px;
+    font-size: 15px !important;
+    display: block;
+    text-align: center;
+    margin-left: -29px;
+    font-weight: bold;
+  }
 }
 
 /* colors */
@@ -58,7 +168,7 @@ body {
 } */
 
 .home {
-  height: 91vh;
+  height: 70vh;
   background-image: url(justice.jpg);
   background-size: cover;
 }
@@ -66,20 +176,28 @@ body {
 .headertext span {
   font-weight: 800;
   font-size: 60px;
+  font-family: 'Abril Fatface', cursive;
+  text-shadow: 0px 1px 23px black;
 }
 
 .howeop {
-  padding: 150px 0 50px 0 !important;
+  padding: 30px 0px !important;
 }
 
 .steps {
-  margin: 100px 0 50px 0 !important;
+  margin: 10px 0 50px 0 !important;
   padding: 100px;
 }
+
+.logo_area img {
+  width: 13%;
+}
+
 .form {
   padding: 100px 40px 50px 0px !important;
   border: none !important;
 }
+
 .steps p {
   font-size: 12px;
   font-weight: 400;
@@ -97,6 +215,7 @@ body {
 .steps h3 {
   font-weight: 600;
   font-size: 18px;
+  font-family: 'Abril Fatface', cursive;
 }
 
 .casefiles {
@@ -104,8 +223,11 @@ body {
 }
 
 .headertext {
-  padding: 250px 0 0 150px !important;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
 }
 
 .homeimg {
@@ -596,7 +718,7 @@ width: 100%;
   }
 
   .form {
-    padding: 100px 40px 100px 0!important;
+    padding: 100px 40px 100px 0 !important;
   }
 
   .form h1 {
