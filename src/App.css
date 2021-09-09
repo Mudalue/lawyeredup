@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
 
 /* font-family: 'Abril Fatface', cursive; */
 /* font-family: 'Archivo Black', sans-serif; */
@@ -9,8 +9,8 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
-
+  font-family: "Poppins", sans-serif;
+  background-color: #e5e5e5;
 }
 
 /* custom nav bar */
@@ -18,7 +18,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 20px;
+  padding: 45px 20px;
   height: 70px;
   background-color: #1fc58e;
 }
@@ -35,7 +35,8 @@ body {
 .top_nav_bar .nav_links li a {
   color: #fff;
   text-decoration: none;
-  font-size: 13px;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 .big_btn {
@@ -56,8 +57,6 @@ body {
   display: none;
 }
 
-
-
 @media screen and (max-width: 30em) {
   .top_nav_bar .nav_links {
     display: none;
@@ -66,7 +65,7 @@ body {
   .sidebar {
     display: block;
     position: fixed;
-    width: 70%;
+    width: 50%;
     height: 100%;
     right: 0px;
     display: flex;
@@ -89,18 +88,18 @@ body {
 
   .sidebar ul {
     list-style: none;
-    margin-bottom: 46px;
+    margin-bottom: 200px;
   }
 
   .sidebar ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 20px;
-    text-transform: uppercase;
+    font-size: 18px;
+    text-transform: capitalize;
   }
 
   .sidebar ul li a:hover {
-    color: #1FC58E
+    color: #1fc58e;
   }
 
   .fix_bottom {
@@ -121,40 +120,43 @@ body {
 
 /* colors */
 .bgk-blue {
-  background-color: #1FC58E !important;
+  background-color: #1fc58e !important;
 }
 
 .btn-blue {
   color: #fff;
-  background-color: #1FC58E !important;
+  background-color: #1fc58e !important;
 }
 
 .txt-blue {
-  color: #1FC58E;
+  color: #1fc58e;
 }
 
 .bg-grey {
   background-color: #dcdcdc;
 }
+.bgk-light {
+  background-color: #fff;
+}
 
 .nav {
   padding: 15px;
+  background-color: #1fc58e !important;
 }
 
 .navbar-brand {
   font-weight: 700;
   font-size: 20px;
-  color: #1FC58E;
+  color: #1fc58e;
 }
 
 .navbar-nav {
   font-size: 14px;
   font-weight: 500;
-
 }
 
 .nav-link active {
-  color: #1FC58E;
+  color: #1fc58e;
 }
 
 /* .nav-link:hover{
@@ -167,21 +169,21 @@ body {
   right:50%;
 } */
 
-.home {
-  height: 70vh;
+.home{
+  height: 80vh;
+  padding: 100px 0;
   background-image: url(justice.jpg);
   background-size: cover;
 }
 
 .headertext span {
   font-weight: 800;
-  font-size: 60px;
-  font-family: 'Abril Fatface', cursive;
-  text-shadow: 0px 1px 23px black;
+  font-size: 75px;
 }
 
 .howeop {
-  padding: 30px 0px !important;
+  height: auto;
+  padding: 70px 0px !important;
 }
 
 .steps {
@@ -199,8 +201,9 @@ body {
 }
 
 .steps p {
-  font-size: 12px;
-  font-weight: 400;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 25px;
 }
 
 .stepscontent {
@@ -209,25 +212,26 @@ body {
 
 .steps button {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 20px;
 }
 
 .steps h3 {
-  font-weight: 600;
-  font-size: 18px;
-  font-family: 'Abril Fatface', cursive;
+  font-weight: 700;
+  font-size: 30px;
 }
 
 .casefiles {
+  height: auto;
   padding: 150px 0 100px 0;
 }
 
 .headertext {
-  display: flex;
+  /* display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 100px;
+  margin-top: 100px; */
+  margin: 100px;
 }
 
 .homeimg {
@@ -238,11 +242,11 @@ body {
 
 .headertext h1 {
   font-size: 52px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .headertext p {
-  font-size: 12px;
+  font-size: 18px;
 }
 
 .udashboardcontent h1,
@@ -258,7 +262,8 @@ body {
 
 .aboutheader h1 {
   font-size: 3rem;
-  font-weight: 500;
+  font-weight: 700;
+  color: #1fc58e;
 }
 
 .udashboardheader p,
@@ -272,7 +277,7 @@ body {
 .contact h3,
 .howeop h3 {
   font-weight: 600;
-  font-size: 18px;
+  font-size: 30px;
   word-break: break-all;
 }
 
@@ -281,40 +286,43 @@ body {
 }
 
 .aboutcontent h3 {
-  font-size: 18px;
+  font-size: 30px;
   font-weight: 600;
 }
 
 h5 {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .aboutheader {
-  height: 70vh;
-  padding-top: 120px;
+  
+  padding: 120px 0;
 }
 
 .aboutheader h4 {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 30px;
 }
 
 .abouteam h6 {
-  font-size: 18px;
+  font-size: 30px;
   font-weight: 600;
 }
 
 .abouteam p {
-  font-size: 12px;
+  font-size: 18px;
+  font-weight: 500px;
+  margin-top: 25px;
 }
 
 .contact p,
 .accessibility p,
 .howeop p,
 .udashboardcontent p {
-  font-weight: 300;
-  font-size: 12px;
+  font-weight: 500;
+  font-size: 18px;
+  margin-top: 25px;
   /* white-space: pre; */
 }
 
@@ -329,13 +337,13 @@ h5 {
 .aboutheader h3,
 .accessibility h3,
 .caseheader h3 {
-  font-size: 18px;
+  font-size: 30px;
   font-weight: 600;
 }
 
 .aboutheader p,
 .caseheader p {
-  font-size: 12px;
+  font-size: 20px;
 }
 
 .udashboardcontent h6 {
@@ -344,7 +352,8 @@ h5 {
 }
 
 .aboutcontent p {
-  font-size: 12px;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .casefiles .card {
@@ -358,17 +367,20 @@ h5 {
 }
 
 .casefiles .card .card-text p {
-  font-weight: 400;
-  font-size: 12px;
+  font-weight: 500;
+  font-size: 18px;
+  margin-top: 25px;
 }
 
 /* <.lawyersection> */
 .lawyersection h4 {
   font-size: 18px;
+  font-weight: 500;
 }
 
 .lawyersection p {
-  font-size: 12px;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .headertext button,
@@ -381,9 +393,11 @@ h5 {
 }
 
 .accessibility {
-  padding: 100px 0;
+  padding: 130px 0;
 }
-
+.contact{
+  padding: 100px 0!important;
+}
 /* <footer> */
 .footer a {
   text-decoration: none;
@@ -391,32 +405,38 @@ h5 {
 
 .footer h1 {
   font-size: 30px;
+  font-weight: 700px;
 }
 
 .footer h6 {
-  font-size: 18px;
+  font-size: 25px;
+  font-weight: 700;
 }
 
 .footer p {
-  font-size: 12px;
+  font-size: 18px;
+font-weight: 500;
 }
 
-@media only screen and (max-device-width: 480px) and (orientation: portrait) {
+@media only screen and (max-width: 768px) and (orientation: portrait) {
   .home {
     height: 100%;
     background-color: #fff !important;
     background-image: none !important;
+    padding: 0 !important;
+    text-align: start !important;
   }
 
   .headertext span {
     font-weight: 800;
-    font-size: 50px;
+    font-size: 55px!important;
   }
 
   .headertext {
-    padding: 200px 5px 100px 5px !important;
-    text-align: center !important;
+    text-align: start !important;
     line-height: 20px !important;
+    margin: 0;
+    padding: 200px 10px;
   }
 
   .headertext img {
@@ -424,25 +444,45 @@ h5 {
   }
 
   .headertext h1 {
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 600;
-    text-align: center !important;
+    text-align: start !important;
     color: black !important;
   }
 
   .headertext p {
     color: black !important;
     font-size: 14px;
-    text-align: center !important;
-    padding: 5px;
+    /* text-align: center !important;
+    padding: 5px; */
   }
 
   .headertext button {
-    border: 1px solid #1FC58E !important;
+    border: 1px solid #1fc58e !important;
     text-align: center !important;
     background-color: transparent !important;
   }
-
+   .casefiles, .lawyersection{
+     height: auto;
+   }
+   
+.howeop img{
+  height: 400px;
+  width: 450px;
+}
+.contact p, .accessibility p, .howeop p, .udashboardcontent p {
+    font-weight: 500;
+    font-size: 14px;
+    /* white-space: pre; */
+}
+  .steps p{
+    font-weight: 600;
+    font-size: 14px;
+  }
+.steps h3 {
+    font-weight: 600;
+    font-size: 24px;
+}
   .homeimg {
     /* padding: 50px 0  0 30px!important;
   width: 80%;
@@ -569,7 +609,6 @@ h5 {
 
   .udashboard .nav button {
     padding: 15px 100px;
-
   }
 
   /* <Content> */
@@ -661,7 +700,6 @@ width: 100%;
     transform: rotate(-45deg);
   }
 
-
   .profileinfo p {
     font-weight: 400;
     font-size: 14px;
@@ -693,28 +731,29 @@ width: 100%;
 
   .caseinfo h4 {
     font-weight: 700;
-    font-size: 18px;
+    font-size: 30px !important;
   }
 
   .caseinfo p {
-    font-weight: 400;
-    font-size: 12px;
+    font-weight: 500;
+    font-size: 18px;
     color: gray;
+    margin-top: 25px;
   }
 
   /* <contactsection/> */
   .contactsection {
-    padding: 100px 0
+    padding: 100px 0;
   }
 
   .contactsection h1 {
     font-weight: 700;
-    font-size: 5rem;
+    font-size: 3rem;
   }
 
   .contactsection p {
-    font-weight: 600;
-    font-size: 1.5rem;
+    font-weight: 400;
+    font-size: 1rem;
   }
 
   .form {
@@ -735,7 +774,7 @@ width: 100%;
   }
 
   .signinform {
-    padding: 100px 20px 50px 0 !important;
+    padding: 50px 0  !important;
   }
 
   /* <create case> */
@@ -790,28 +829,22 @@ width: 100%;
     font-size: 50px;
   }
 
-  @media only screen and (min-device-width: 480px) and (orientation: portrait) {
-    .home {
-      height: auto !important;
-      background-image: url(justice.jpg);
-      background-size: cover !important;
-    }
-
-    .headertext {
-      padding: 100px 50px !important
-    }
-
+  @media only screen and (max-device-width: 1200px) and (orientation: portrait) {
+.home{
+  height: 0%!important;
+}
+  
     .headertext span {
-      font-weight: 700;
-      font-size: 40px;
+      font-weight: 800;
+      font-size: 55px!important;
     }
-
-    .headertext img {
-      display: none !important;
+  
+    .headertext {
+      text-align: start !important;
+      line-height: 20px !important;
     }
-
     .headertext h1 {
-      font-size: 30px;
+      font-size: 40px;
       font-weight: 500;
     }
 
@@ -882,7 +915,7 @@ width: 100%;
 
     .form,
     .signinform {
-      padding: 120px 50px 50px 0 !important;
+      padding: 10px 0 !important;
       border: none !important;
     }
 
@@ -937,5 +970,4 @@ width: 100%;
       font-size: 1.5rem !important;
     }
   }
-
 }

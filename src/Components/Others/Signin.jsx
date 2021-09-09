@@ -68,7 +68,7 @@ const Signin = () => {
             <div className="col-md-7 signinform lh-lg pt-5">
               <div className="card p-3">
                 <div className="card-body">
-                  <h1 lassName="card-title"  style={{ fontSize: "20px" }}>Create Account</h1>
+                  <h1 lassName="card-title fw-bolder"  style={{ fontSize: "30px", fontWeight: "700", textAlign:"center" }}>Create Account</h1>
                   <div className="card-text">
                     <form
                       action=""
@@ -77,7 +77,7 @@ const Signin = () => {
                     >
                       <div className="row">
                         <div className="col-md-6 pt-3">
-                          <label>Enter FirstName :</label>
+                          <label>Enter Firstname :</label>
                           <input
                             className="form-control"
                             onChange={({ target: { value } }) =>
@@ -88,7 +88,7 @@ const Signin = () => {
                           />
                         </div>
                         <div className="col-md-6 pt-3">
-                          <label>Enter LastName :</label>
+                          <label>Enter Lastname :</label>
                           <input
                             className="form-control"
                             onChange={({ target: { value } }) =>

@@ -22,10 +22,7 @@
         padding-left: 1em;
     }
 
-    .split-layout__item:first-child {
-        /* padding: 0; */
-    }
-}
+   
 
 .split-layout__divider {
     display: flex;
@@ -90,4 +87,4 @@
     box-shadow: 0px 4px 12px -6px #000;
     height: 50px;
     width: 50%;
-}
+}}

@@ -49,7 +49,7 @@ const Aboutus = () => {
               data-aos-duration="3000"
             >
               <div>
-                <h3>Our Story</h3>
+                <h3 className="fw-bolder">Our Story</h3>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Inventore assumenda corporis porro facilis quam magnam
@@ -64,7 +64,7 @@ const Aboutus = () => {
               data-aos-duration="3000"
             >
               <div>
-                <h3>Our Vision</h3>
+                <h3 className="fw-bolder">Our Vision</h3>
                 <p>
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui
                   dolores autem necessitatibus at doloribus accusantium possimus
@@ -79,7 +79,7 @@ const Aboutus = () => {
               data-aos-duration="3000"
             >
               <div>
-                <h3>Core Values</h3>
+                <h3 className="fw-bolder">Core Values</h3>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Itaque tempora voluptates sapiente necessitatibus neque sunt

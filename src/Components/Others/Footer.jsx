@@ -14,12 +14,14 @@ const Footer = () => {
           <div class="container text-center text-md-start mt-5">
             <div class="row mt-3">
               <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                <h1 class="text-uppercase fw-bold txt-blue">lawyered up</h1>
+                <div className="text-center">
+                  <img src="./images/llogo.png" className="img-fluid" style={{width: "100px", height: "100px"}}/>
+                  </div>
                 {/* <hr
                   class="mb-4 mt-0 d-inline-block mx-auto"
                   style="width: 60px; background-color: #7c4dff; height: 2px"
                 /> */}
-                <p>
+                <p className="mt-3">
                  We are a group of people that has gotten tired of the injustice in the society 
                 </p>
               </div>

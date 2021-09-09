@@ -17,29 +17,29 @@ const CaseInfo = () => {
       <section className="caseinfo">
         <div className="container">
           <div className="row py-3">
-            <div className="col-md-12">
-              <h4 className="text-start">Case Information</h4>
+            <div className="col-md-12" style={{marginTop: " 50px"}}>
+              <h4 className="text-start fw-bolder">Case Information</h4>
               <hr />
             </div>
             <div className="col-md-4">
-              <p>Date posted: 3days ago</p>
+              <p><span className="fw-bold">Date posted:</span>  3days ago</p>
             </div>
             <div className="col-md-4">
-              <p>Location: Lagos, Nigeria</p>
+              <p><span className="fw-bold">Location:</span> Lagos, Nigeria</p>
             </div>
             <div className="col-md-4">
-              <p>Duration: 4months</p>
+              <p><span className="fw-bold">Duration:</span> 4months</p>
             </div>
             <div className="col-md-4">
-              <p>Fee range: &#8358; 40,000 - &#8358; 90,000</p>
+              <p><span className="fw-bold">Fee range:</span> &#8358; 40,000 - &#8358; 90,000</p>
             </div>
             <div className="col-md-4">
-              <p>Case-type: Homicide</p>
+              <p><span className="fw-bold">Case-type:</span> Homicide</p>
             </div>
           </div>
           <div className="row py-4">
             <div className="col-md-12">
-              <h4>Case Briefing</h4>
+              <h4 className="fw-bolder">Case Briefing</h4>
             </div>
             <hr />
             <div className="col-md-12">
@@ -60,29 +60,29 @@ const CaseInfo = () => {
           </div>
           <div className="row py-4">
             <div className="col-md-12">
-              <h4>Questions Required</h4>
+              <h4 className="fw-bolder">Questions Required</h4>
               <hr />
-              <p>Question 1: Have you handled this type of case before?</p>
-              <p>Question 2: Have u been called to bar?</p>
+              <p><span className="fw-bold">Question 1:</span> Have you handled this type of case before?</p>
+              <p><span className="fw-bold">Question 2:</span> Have u been called to bar?</p>
             </div>
           </div>
           <div className="row py-4">
             <div className="col-md-12">
-              <h4>Case Activity</h4>
+              <h4 className="fw-bolder">Case Activity</h4>
               <hr />
-              <p>Offers: more than 50 lawyers responded</p>
-              <p>Interest: 50 lawyers have shown interest</p>
+              <p><span className="fw-bold">Offers:</span> more than 50 lawyers responded</p>
+              <p><span className="fw-bold">Interest:</span> 50 lawyers have shown interest</p>
             </div>
           </div>
           <div className="row py-4">
             <div className="col-md-12">
-              <h4>About Client</h4>
+              <h4 className="fw-bolder">About Client</h4>
               <hr />
               <p>
-                Status: <span className="badge bg-warning">Verified</span>
+              <span className="fw-bold">Status:</span>  <span className="badge bg-warning">Verified</span>
               </p>
-              <p>Location: Nigeria</p>
-              <p>Date joined: 4years ago</p>
+              <p><span className="fw-bold">Location:</span> Nigeria</p>
+              <p><span className="fw-bold">Date joined:</span> 4years ago</p>
             </div>
           </div>
           <div className="row pb-5">

@@ -15,10 +15,10 @@ const Contact = () => {
   return (
     <div>
       <Navbar />
-      <section className="contactsection bg-grey">
+      <section className="contactsection bg-dark text-light">
         <div className="container-fluid">
           <div className="row">
-            <div className="col-md-12">
+            <div className="col-md-">
               <div className="text-center p-5">
                 <h1>Contact Us</h1>
                 <p>

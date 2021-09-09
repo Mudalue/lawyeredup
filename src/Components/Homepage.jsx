@@ -30,10 +30,10 @@ const Homepage = () => {
   return (
     <div>
       <Navbar />
-      <section className="home bgk-blue">
+      <section className="home bgk-light ">
         <div className="container-fluid">
           <div
-            className="row"
+            className="row text-start"
             data-aos="fade-up"
             data-aos-offset="200"
             data-aos-delay="50"
@@ -44,45 +44,57 @@ const Homepage = () => {
             data-aos-anchor-placement="top-center"
           >
             <div className="col-md-6 col-sm-6">
-              <div className=" headertext">
+              <div className=" headertext lh-base">
                 <h1 className="text-light">
-                  <span>Are you</span> <br />
+                  Are u{" "}
                   <span className="fw-bold txt-blue">LawyeredUp?</span>
                 </h1>
                 <p className="text-light">
-                  Get connected with professionals for your cases, advice or
-                  purchases. <br /> Simply fill a form and get connected.
+                  Get connected with our vast community of lawyers for your
+                  cases, advice or purchases.
                 </p>
 
                 <div>
-                  <a href="/Signin">
-                    <button className="btn bg-light btn-md px-4 py-2 fw-boulder text-dark">
-                      State Your Case
-                    </button>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-6">
-              <div className=" headertext">
-                <h1 className="text-light">
-                  <span>Are you a</span> <br />
-                  <span className="fw-bold txt-blue">Lawyer?</span>
-                </h1>
-                <p className="text-light">
-                  Choose from a unique set of client issues.
-                  <br />
-                </p>
+                  <div class="dropdown">
+                    <a
+                      class="btn btn-blue dropdown-toggle"
+                      href="#"
+                      role="button"
+                      id="dropdownMenuLink"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Get started
+                    </a>
 
-                <div>
-                  <a href="/Signin">
-                    <button className="btn bg-light btn-md px-4 py-2 fw-boulder text-dark">
-                      Pick Up A Case
-                    </button>
-                  </a>
+                    <ul
+                      class="dropdown-menu"
+                      aria-labelledby="dropdownMenuLink"
+                    >
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          Lawyer
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          Client
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
+            {/* <div className="col-md-6">
+              <div className="text-start">
+                <img
+                  src="./images/home.gif"
+                  className="img-fluid"
+                  style={{ width: "500px", height: "450px" }}
+                />
+              </div>
+            </div> */}
           </div>
         </div>
       </section>
@@ -94,12 +106,12 @@ const Homepage = () => {
             </div>
             <div className="col-md-6 " data-aos="zoom-in">
               <div className="pt-5  p-5">
-                <h3 className="pt-5">What we do?</h3>
+                <h3 className="pt-5 fw-bolder">What we do?</h3>
                 <p className="lh-lg">
-                  See yourself as the location icon coloured black and the{" "}
-                  <br /> other location icon coloured grey as lawyer around,{" "}
-                  <span className="txt-blue fw-bold">LawyedUp</span> brings
-                  <br /> you closer to justice in your time of need{" "}
+                  See yourself as the location icon coloured black and the other
+                  location icon coloured grey as lawyer around,{" "}
+                  <span className="txt-blue fw-bold">LawyedUp</span> brings you
+                  closer to justice in your time of need{" "}
                 </p>
                 <div>
                   <button className="btn btn-blue  btn-md">see more</button>
@@ -114,11 +126,11 @@ const Homepage = () => {
           <div className="row">
             <div className="col-md-6 text-light">
               <div
-                className="lh-lg text-start stepscontent"
+                className="lh-lbase text-start stepscontent"
                 data-aos="fade-left"
               >
                 <div>
-                  <h3 className="txt-blue">Steps to follow</h3>
+                  <h3 className="txt-blue fw-bolder">Steps to follow</h3>
                   <p>Find justice by following the steps below</p>
                 </div>
                 <div>
@@ -154,7 +166,7 @@ const Homepage = () => {
                   </p>
                 </div>
                 <div className="text-centers">
-                  <button className="btn btn-blue btn-lg px-3">Start</button>
+                  <button className="btn btn-blue btn-lg px-5">Start</button>
                 </div>
               </div>
             </div>
@@ -175,7 +187,7 @@ const Homepage = () => {
           <div className="row">
             <div className="col-md-12 text-center">
               <div className="caseheader">
-                <h3>Case Files</h3>
+                <h3 className="fw-bolder">Case Files</h3>
                 <p className="text-muted">
                   Top cases that requires to be{" "}
                   <span className="txt-blue fw-bold">Lawyered up</span>
@@ -197,7 +209,7 @@ const Homepage = () => {
           <div className="row">
             <div className="col-md-12">
               <div className="caseheader mt-5 text-center text-dark">
-                <h3>Suggested Lawyers</h3>
+                <h3 className="fw-bolder">Suggested Lawyers</h3>
                 <p>
                   Top lawyers to get your case{" "}
                   <span className="txt-blue fw-bold">Lawyered Up</span>
@@ -371,12 +383,12 @@ const Homepage = () => {
           <div className="row">
             <div className="col-md-6 " data-aos="fade-right">
               <div className="dev py-5 pl-5 lh-lg">
-                <h3>Accessiblity</h3>
+                <h3 className="fw-bolder">Accessiblity</h3>
                 <p>
                   Check out our application on a wide range of devices from
                   <br />
                   phones, ipads and Laptops, We at{" "}
-                  <span className="txt-blue fw-bold">LawyedUp</span> makes
+                  <span className="txt-blue fw-bolder">LawyedUp</span> makes
                   <br />
                   accessiblity to justice at the palm of your hands
                 </p>
@@ -396,7 +408,7 @@ const Homepage = () => {
             </div>
             <div className="col-md-6 " data-aos="fade-right">
               <div className="pt-5 lh-lg pr-5 ">
-                <h3>Contact us</h3>
+                <h3 className="fw-bolder">Contact us</h3>
                 <p>
                   Contact us through our various channels and social media
                   network <br /> or you could give us a feedback on our platform

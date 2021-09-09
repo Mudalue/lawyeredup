@@ -59,8 +59,8 @@ const Login = () => {
               <div className="card ">
                 <div className="card-body">
                   <h1
-                    lassName="card-title text-center"
-                    style={{ fontSize: "20px" }}
+                    className="card-title text-center fw-bolder"
+                    style={{ fontSize: "30px", fontWeight: "600" }}
                   >
                     Login
                   </h1>
